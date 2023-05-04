@@ -1,4 +1,5 @@
-"use strict";Object.defineProperty(exports, "__esModule", {value: true}); function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }var _react = require('react'); var _react2 = _interopRequireDefault(_react);var _goober = require('goober');_goober.setup.call(void 0, _react2.default.createElement);var s=_goober.styled.call(void 0, "button")`
+"use client";
+"use strict";var c=Object.create;var n=Object.defineProperty;var f=Object.getOwnPropertyDescriptor;var u=Object.getOwnPropertyNames;var d=Object.getPrototypeOf,m=Object.prototype.hasOwnProperty;var x=(t,o)=>{for(var r in o)n(t,r,{get:o[r],enumerable:!0})},p=(t,o,r,l)=>{if(o&&typeof o=="object"||typeof o=="function")for(let e of u(o))!m.call(t,e)&&e!==r&&n(t,e,{get:()=>o[e],enumerable:!(l=f(o,e))||l.enumerable});return t};var g=(t,o,r)=>(r=t!=null?c(d(t)):{},p(o||!t||!t.__esModule?n(r,"default",{value:t,enumerable:!0}):r,t)),B=t=>p(n({},"__esModule",{value:!0}),t);var k={};x(k,{Button:()=>a});module.exports=B(k);var i=g(require("react")),s=require("goober");(0,s.setup)(i.default.createElement);var b=(0,s.styled)("button")`
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 4px;
@@ -12,5 +13,5 @@
     background-color: #000;
     color: #fff;
   }
-`,p= exports.Button =({title:o,className:r=""})=>_react2.default.createElement(s,{className:r,onClick:()=>alert(new Date)},o);exports.Button = p;
+`,a=({title:t,className:o=""})=>i.default.createElement(b,{className:o,onClick:()=>alert(new Date)},t);0&&(module.exports={Button});
 //# sourceMappingURL=index.js.map

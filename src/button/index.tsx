@@ -1,10 +1,10 @@
 import React, { FC } from "react";
 import { styled, setup } from "goober";
 
-export type ButtonProps = {
+export interface ButtonProps {
   title: string;
   className?: string;
-};
+}
 
 setup(React.createElement);
 
