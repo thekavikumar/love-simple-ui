@@ -1,8 +1,12 @@
 # Getting Started
 
-Welcome to love-simple-ui, a npm library for easily integrating UI components into your web projects. This library contains a variety of pre-designed and fully customizable components, ranging from simple buttons and form elements to more complex and interactive components such as carousels and modals. All of the components are designed to be responsive and work seamlessly across a range of devices and screen sizes.
+Welcome to love-simple-ui, it is a lightweight and fast library that provides a set of simple and easy-to-use UI components for React applications. These components are designed to be intuitive, customizable, and responsive, making it easy for developers to quickly create clean and modern user interfaces.
 
-With love-simple-ui, you can quickly and easily add professional-quality UI elements to your projects, saving time and effort in the process. Whether you're a seasoned developer or just starting out, love-simple-ui has something to offer for everyone. So why wait? Start incorporating love-simple-ui into your projects today and see the difference it can make!
+One of the key features of love-simple-ui is its lightweight design. The package is optimized to have a minimal impact on application performance, allowing it to load quickly and operate smoothly. This is achieved by using only the essential code necessary to provide the desired functionality, without any unnecessary overhead or bloat.
+
+In addition to being lightweight, love-simple-ui is also fast. The library is optimized for performance, ensuring that even complex UI components can be rendered quickly and efficiently. This is achieved by using efficient algorithms, minimizing the number of DOM updates required, and leveraging other performance optimization techniques.
+
+Overall, love-simple-ui is an excellent choice for developers who want to create fast and lightweight React applications with simple and intuitive user interfaces. Whether you are building a simple web application or a more complex enterprise application, love-simple-ui can help you create a great user experience without sacrificing performance.
 
 ## Installation
 
