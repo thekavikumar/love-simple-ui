@@ -1,6 +1,6 @@
 {
   "name": "love-simple-ui",
-  "version": "1.0.12",
+  "version": "1.0.11",
   "description": "An open-source UI library for developers to make their life easier :)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,8 +22,7 @@
   "author": "Kavi Kumar",
   "license": "ISC",
   "files": [
-    "dist",
-    "src"
+    "dist"
   ],
   "exports": {
     "./package.json": "./package.json",
