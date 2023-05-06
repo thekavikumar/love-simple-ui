@@ -26,7 +26,7 @@ To use love-simple-ui in your project, you must first import the library into yo
 import { component } from "love-simple-ui";
 ```
 
-Once you've imported the library, you can use any of the components it contains. For example, to use the ShoppingCard component, simply add the following line to your code:
+Once you've imported the library, you can use any of the components it contains. For example, to use the PrimaryButton component, simply add the following line to your code:
 
 ```js filename="App.js" {1,6} copy
 import { PrimaryButton } from "love-simple-ui";
@@ -42,7 +42,7 @@ function App() {
 
 ## Contributing
 
-Contributions are welcome! If you'd like to contribute to love-simple-ui, please follow these steps:
+Contributions are welcomed! If you'd like to contribute to love-simple-ui, please follow these steps:
 
 - Fork this repository
 - Create a new branch: `git checkout -b <branch_name>`
