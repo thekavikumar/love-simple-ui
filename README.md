@@ -29,16 +29,12 @@ import { component } from "love-simple-ui";
 Once you've imported the library, you can use any of the components it contains. For example, to use the ShoppingCard component, simply add the following line to your code:
 
 ```js filename="App.js" {1,6} copy
-import { Button } from "love-simple-ui";
+import { PrimaryButton } from "love-simple-ui";
 
 function App() {
-  const click = () => {
-    alert("You clicked the button!");
-  };
-
   return (
     <div className="App">
-      <Button title="Hello there!" />
+      <PrimaryButton text="Hello there!" />
     </div>
   );
 }
