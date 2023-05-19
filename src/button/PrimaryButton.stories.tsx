@@ -1,5 +1,5 @@
 import React from "react";
-import { PrimaryButton, LoadingButton, Button3, Button4 } from "./index";
+import { PrimaryButton, Button3, Button4 } from "./index";
 
 export const ButtonPrimary = () => (
   <PrimaryButton
@@ -11,7 +11,7 @@ export const ButtonPrimary = () => (
 );
 
 export const ButtonLoading = () => (
-  <LoadingButton text={"Loading..."} loading />
+  <PrimaryButton text={"Loading..."} loading />
 );
 
 export const ButtonThree = () => <Button3 text="Button 3" />;

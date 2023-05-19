@@ -1,5 +1,5 @@
 "use client";
-"use strict";var y=Object.create;var i=Object.defineProperty;var v=Object.getOwnPropertyDescriptor;var w=Object.getOwnPropertyNames,x=Object.getOwnPropertySymbols,L=Object.getPrototypeOf,c=Object.prototype.hasOwnProperty,d=Object.prototype.propertyIsEnumerable;var u=(t,e,n)=>e in t?i(t,e,{enumerable:!0,configurable:!0,writable:!0,value:n}):t[e]=n,p=(t,e)=>{for(var n in e||(e={}))c.call(e,n)&&u(t,n,e[n]);if(x)for(var n of x(e))d.call(e,n)&&u(t,n,e[n]);return t};var l=(t,e)=>{var n={};for(var r in t)c.call(t,r)&&e.indexOf(r)<0&&(n[r]=t[r]);if(t!=null&&x)for(var r of x(t))e.indexOf(r)<0&&d.call(t,r)&&(n[r]=t[r]);return n};var T=(t,e)=>{for(var n in e)i(t,n,{get:e[n],enumerable:!0})},g=(t,e,n,r)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of w(e))!c.call(t,o)&&o!==n&&i(t,o,{get:()=>e[o],enumerable:!(r=v(e,o))||r.enumerable});return t};var k=(t,e,n)=>(n=t!=null?y(L(t)):{},g(e||!t||!t.__esModule?i(n,"default",{value:t,enumerable:!0}):n,t)),P=t=>g(i({},"__esModule",{value:!0}),t);var S={};T(S,{Button3:()=>h,Button4:()=>B,LoadingButton:()=>b,PrimaryButton:()=>m});module.exports=P(S);var a=k(require("react")),s=require("goober");(0,s.setup)(a.default.createElement);var M=(0,s.styled)("button")`
+"use strict";var B=Object.create;var i=Object.defineProperty;var y=Object.getOwnPropertyDescriptor;var v=Object.getOwnPropertyNames,l=Object.getOwnPropertySymbols,w=Object.getPrototypeOf,c=Object.prototype.hasOwnProperty,d=Object.prototype.propertyIsEnumerable;var u=(t,e,n)=>e in t?i(t,e,{enumerable:!0,configurable:!0,writable:!0,value:n}):t[e]=n,p=(t,e)=>{for(var n in e||(e={}))c.call(e,n)&&u(t,n,e[n]);if(l)for(var n of l(e))d.call(e,n)&&u(t,n,e[n]);return t};var x=(t,e)=>{var n={};for(var r in t)c.call(t,r)&&e.indexOf(r)<0&&(n[r]=t[r]);if(t!=null&&l)for(var r of l(t))e.indexOf(r)<0&&d.call(t,r)&&(n[r]=t[r]);return n};var T=(t,e)=>{for(var n in e)i(t,n,{get:e[n],enumerable:!0})},g=(t,e,n,r)=>{if(e&&typeof e=="object"||typeof e=="function")for(let o of v(e))!c.call(t,o)&&o!==n&&i(t,o,{get:()=>e[o],enumerable:!(r=y(e,o))||r.enumerable});return t};var k=(t,e,n)=>(n=t!=null?B(w(t)):{},g(e||!t||!t.__esModule?i(n,"default",{value:t,enumerable:!0}):n,t)),L=t=>g(i({},"__esModule",{value:!0}),t);var H={};T(H,{Button3:()=>b,Button4:()=>h,PrimaryButton:()=>m});module.exports=L(H);var s=k(require("react")),a=require("goober");(0,a.setup)(s.default.createElement);var P=(0,a.styled)("button")`
   background-color: "#fff";
   border: 1px solid #000;
   border-radius: 4px;
@@ -13,7 +13,7 @@
     background-color: #000;
     color: #fff;
   }
-`,H=(0,s.styled)("button")`
+`,M=(0,a.styled)("button")`
   background-color: "#fff";
   border: 1px solid #000;
   border-radius: 4px;
@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-`,m=r=>{var o=r,{text:t,className:e=""}=o,n=l(o,["text","className"]);return a.default.createElement(M,p({className:e},n),t)},b=o=>{var f=o,{text:t,className:e="",loading:n}=f,r=l(f,["text","className","loading"]);return a.default.createElement(H,p({className:e},r),n&&a.default.createElement("img",{src:"https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg",alt:"loading",width:"25px"}),t)},N=(0,s.styled)("button")`
+`,m=o=>{var f=o,{text:t,loading:e=!1,className:n=""}=f,r=x(f,["text","loading","className"]);return e?s.default.createElement(M,p({className:n},r),t):s.default.createElement(P,p({className:n},r),t)},S=(0,a.styled)("button")`
   align-items: center;
   appearance: none;
   background-image: radial-gradient(
@@ -76,7 +76,7 @@
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
   }
-`,h=r=>{var o=r,{text:t,className:e=""}=o,n=l(o,["text","className"]);return a.default.createElement(N,p({className:e},n),t)},E=(0,s.styled)("button")`
+`,b=r=>{var o=r,{text:t,className:e=""}=o,n=x(o,["text","className"]);return s.default.createElement(S,p({className:e},n),t)},E=(0,a.styled)("button")`
   cursor: pointer;
   &,
   &:after {
@@ -174,5 +174,5 @@
       transform: translate(0);
     }
   }
-`,B=r=>{var o=r,{text:t,className:e=""}=o,n=l(o,["text","className"]);return a.default.createElement(E,p({className:e},n),t)};0&&(module.exports={Button3,Button4,LoadingButton,PrimaryButton});
+`,h=r=>{var o=r,{text:t,className:e=""}=o,n=x(o,["text","className"]);return s.default.createElement(E,p({className:e},n),t)};0&&(module.exports={Button3,Button4,PrimaryButton});
 //# sourceMappingURL=index.js.map

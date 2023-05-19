@@ -3,14 +3,10 @@ import { styled, setup } from "goober";
 
 export interface ButtonProps {
   text?: string;
+  loading?: boolean;
   className?: string;
 }
 
-export interface LoadingButtonProps {
-  text?: string;
-  className?: string;
-  loading?: boolean;
-}
 export interface Button3Props {
   text?: string;
   className?: string;
@@ -52,26 +48,18 @@ const StyledLoading = styled("button")`
 
 export const PrimaryButton: FC<
   ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ text, className = "", ...props }) => {
-  return (
-    <StyledPrimary className={className} {...props}>
-      {text}
-    </StyledPrimary>
-  );
-};
+> = ({ text, loading = false, className = "", ...props }) => {
 
-export const LoadingButton: FC<
-  LoadingButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ text, className = "", loading, ...props }) => {
+  if (!loading) {
+    return (
+      <StyledPrimary className={className} {...props}>
+        {text}
+      </StyledPrimary>
+    );
+  }
+
   return (
     <StyledLoading className={className} {...props}>
-      {loading && (
-        <img
-          src="https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg"
-          alt="loading"
-          width="25px"
-        />
-      )}
       {text}
     </StyledLoading>
   );

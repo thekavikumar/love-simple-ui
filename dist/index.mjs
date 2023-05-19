@@ -1,5 +1,5 @@
 "use client";
-var d=Object.defineProperty;var p=Object.getOwnPropertySymbols;var f=Object.prototype.hasOwnProperty,u=Object.prototype.propertyIsEnumerable;var c=(t,n,e)=>n in t?d(t,n,{enumerable:!0,configurable:!0,writable:!0,value:e}):t[n]=e,s=(t,n)=>{for(var e in n||(n={}))f.call(n,e)&&c(t,e,n[e]);if(p)for(var e of p(n))u.call(n,e)&&c(t,e,n[e]);return t};var i=(t,n)=>{var e={};for(var r in t)f.call(t,r)&&n.indexOf(r)<0&&(e[r]=t[r]);if(t!=null&&p)for(var r of p(t))n.indexOf(r)<0&&u.call(t,r)&&(e[r]=t[r]);return e};import a from"react";import{styled as l,setup as g}from"goober";g(a.createElement);var m=l("button")`
+var d=Object.defineProperty;var i=Object.getOwnPropertySymbols;var f=Object.prototype.hasOwnProperty,u=Object.prototype.propertyIsEnumerable;var c=(t,n,e)=>n in t?d(t,n,{enumerable:!0,configurable:!0,writable:!0,value:e}):t[n]=e,a=(t,n)=>{for(var e in n||(n={}))f.call(n,e)&&c(t,e,n[e]);if(i)for(var e of i(n))u.call(n,e)&&c(t,e,n[e]);return t};var p=(t,n)=>{var e={};for(var r in t)f.call(t,r)&&n.indexOf(r)<0&&(e[r]=t[r]);if(t!=null&&i)for(var r of i(t))n.indexOf(r)<0&&u.call(t,r)&&(e[r]=t[r]);return e};import s from"react";import{styled as l,setup as g}from"goober";g(s.createElement);var m=l("button")`
   background-color: "#fff";
   border: 1px solid #000;
   border-radius: 4px;
@@ -27,7 +27,7 @@ var d=Object.defineProperty;var p=Object.getOwnPropertySymbols;var f=Object.prot
   align-items: center;
   justify-content: center;
   gap: 8px;
-`,h=r=>{var o=r,{text:t,className:n=""}=o,e=i(o,["text","className"]);return a.createElement(m,s({className:n},e),t)},B=o=>{var x=o,{text:t,className:n="",loading:e}=x,r=i(x,["text","className","loading"]);return a.createElement(b,s({className:n},r),e&&a.createElement("img",{src:"https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg",alt:"loading",width:"25px"}),t)},y=l("button")`
+`,h=o=>{var x=o,{text:t,loading:n=!1,className:e=""}=x,r=p(x,["text","loading","className"]);return n?s.createElement(b,a({className:e},r),t):s.createElement(m,a({className:e},r),t)},B=l("button")`
   align-items: center;
   appearance: none;
   background-image: radial-gradient(
@@ -76,7 +76,7 @@ var d=Object.defineProperty;var p=Object.getOwnPropertySymbols;var f=Object.prot
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
   }
-`,v=r=>{var o=r,{text:t,className:n=""}=o,e=i(o,["text","className"]);return a.createElement(y,s({className:n},e),t)},w=l("button")`
+`,y=r=>{var o=r,{text:t,className:n=""}=o,e=p(o,["text","className"]);return s.createElement(B,a({className:n},e),t)},v=l("button")`
   cursor: pointer;
   &,
   &:after {
@@ -174,5 +174,5 @@ var d=Object.defineProperty;var p=Object.getOwnPropertySymbols;var f=Object.prot
       transform: translate(0);
     }
   }
-`,L=r=>{var o=r,{text:t,className:n=""}=o,e=i(o,["text","className"]);return a.createElement(w,s({className:n},e),t)};export{v as Button3,L as Button4,B as LoadingButton,h as PrimaryButton};
+`,w=r=>{var o=r,{text:t,className:n=""}=o,e=p(o,["text","className"]);return s.createElement(v,a({className:n},e),t)};export{y as Button3,w as Button4,h as PrimaryButton};
 //# sourceMappingURL=index.mjs.map
