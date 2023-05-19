@@ -9,7 +9,7 @@ One of the standout features of love-simple-ui is its incredibly lightweight des
 Speed matters! ⏩ With love-simple-ui, you can count on exceptional performance. Our library is optimized to render even the most complex UI components swiftly and efficiently. How do we do it? We utilize efficient algorithms, minimize the number of DOM updates required, and leverage other clever performance optimization techniques. Say goodbye to sluggish interfaces and hello to lightning-fast interactions! ⚡️💨
 
 ## Developer-Friendly 🧑‍💻
-We have developers in mind! 😊 love-simple-ui is designed to be developer-friendly, providing you with a seamless and enjoyable experience. Our intuitive API and comprehensive documentation make it a breeze to get started and create stunning user interfaces. Whether you're building a simple web app or a complex enterprise application, love-simple-ui has got your back! 💙
+We have developer as a top priority! love-simple-ui is designed to be developer-friendly, furnishing you with a seamless and enjoyable experience. Our intuitive API and comprehensive documentation make it a breeze to get started and create stunning user interfaces. Whether you're fabricating a straightforward web application or an intricate venture application , love-simple-ui has got your back! 💙
 
 ## Create Delightful User Experiences ✨
 At love-simple-ui, our mission is to help you create delightful user experiences without sacrificing performance. With our library, you can easily bring your UI vision to life, delivering clean, modern, and intuitive interfaces that users will love. Get started with love-simple-ui today and let your creativity soar! 🌟💖
