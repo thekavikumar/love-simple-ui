@@ -60,6 +60,11 @@ export const PrimaryButton: FC<
 
   return (
     <StyledLoading className={className} {...props}>
+      <img
+        src="https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg"
+        alt="loading"
+        width="25px"
+      />
       {text}
     </StyledLoading>
   );
