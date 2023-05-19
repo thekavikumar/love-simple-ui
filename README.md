@@ -1,6 +1,10 @@
 # Getting Started
 
+GREETINGS Users and Contributors!!
+
 Welcome to love-simple-ui, it is a lightweight and fast library that provides a set of simple and easy-to-use UI components for React applications. These components are designed to be intuitive, customizable, and responsive, making it easy for developers to quickly create clean and modern user interfaces.
+
+We aim to provide Industry Standard Design rules and also provide fun and intuitive UI which would help you build your next dream project!!
 
 One of the key features of love-simple-ui is its lightweight design. The package is optimized to have a minimal impact on application performance, allowing it to load quickly and operate smoothly. This is achieved by using only the essential code necessary to provide the desired functionality, without any unnecessary overhead or bloat.
 
@@ -44,13 +48,37 @@ function App() {
 
 Contributions are welcomed! If you'd like to contribute to love-simple-ui, please follow these steps:
 
-- Fork this repository
+- Fork this repository(Or alternatively, you can clone the project by running `git clone "<the http link to the project>"`)
 - Create a new branch: `git checkout -b <branch_name>`
 - Make your changes and commit them: `git commit -m '<commit_message>'`
 - Push to the original branch: `git push origin love-simple-ui/<location>`
 - Create the pull request
 
 Alternatively, you can create a new issue if you find a bug or have a feature request.
+
+## Contributon Guidelines
+
+- Familiarize yourself with the project: Take some time to understand the project's structure, architecture, and goals. Read through the existing codebase, documentation, and issue tracker to get an idea of the project's needs and ongoing discussions.
+
+- Discuss your ideas: Before starting work on a new feature or significant changes, it's a good practice to discuss your ideas with the project maintainers and the community. This can be done by opening a new issue or joining existing discussions related to the proposed changes.
+
+- Follow the coding style: Ensure your code follows the project's coding style and conventions. Consistency in coding style helps maintain readability and makes it easier for others to understand and review your contributions. If the project doesn't have specific coding style guidelines, try to match the existing code.
+
+- Write tests: Whenever possible, include tests for your code changes. Tests help ensure the stability and reliability of the project. Existing tests can serve as examples for writing new tests. Run the test suite locally to ensure all tests pass before submitting your changes.
+
+- Keep pull requests focused: Each pull request should address a single issue, bug fix, or feature. Keeping pull requests focused makes them easier to review and allows maintainers to merge them more quickly. If you have multiple unrelated changes, it's better to submit separate pull requests for each.
+
+- Provide a descriptive pull request: When submitting a pull request, provide a clear and concise title that summarizes the changes. In the description, explain the purpose and motivation behind your changes, and reference any related issues or discussions. This helps reviewers understand your intentions.
+
+- Be responsive to feedback: After submitting a pull request, be responsive to any feedback or review comments. Engage in constructive discussions and make necessary changes based on the feedback. Collaboration and iteration are essential parts of the open-source process.
+
+- Give credit when contributing to others' work: If your contribution is built upon or inspired by the work of others, make sure to give proper credit. Provide references or acknowledgments in the code comments, documentation, or commit messages, as appropriate.
+
+- Be respectful and considerate: Remember to maintain a respectful and professional tone in all your interactions within the project. Open-source communities thrive on collaboration and inclusivity. Be patient, kind, and considerate to fellow contributors and maintainers.
+
+- By following these guidelines, you can make meaningful contributions to the love-simple-ui project and help improve its functionality and user experience.
+
+If you have any specific ideas or areas of improvement in mind, feel free to let me know, and I can provide more targeted suggestions.
 
 ## License
 
