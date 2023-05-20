@@ -46,7 +46,6 @@
   },
   "dependencies": {
     "goober": "^2.1.13",
-    "love-simple-ui": "^1.0.15"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17 || ^18",
