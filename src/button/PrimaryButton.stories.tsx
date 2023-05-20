@@ -11,7 +11,7 @@ export const ButtonPrimary = () => (
 );
 
 export const ButtonLoading = () => (
-  <PrimaryButton text={"Loading..."} loading />
+  <PrimaryButton text={"Loading..."} state="loading" />
 );
 
 export const ButtonThree = () => <Button3 text="Button 3" />;

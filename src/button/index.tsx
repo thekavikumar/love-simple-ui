@@ -1,9 +1,11 @@
 import React, { ButtonHTMLAttributes, FC } from "react";
 import { styled, setup } from "goober";
 
+
+type buttonState = 'clickable' | 'typing' | 'loading'
 export interface ButtonProps {
   text?: string;
-  loading?: boolean;
+  state?: buttonState;
   className?: string;
 }
 
@@ -28,6 +30,13 @@ const StyledPrimary = styled("button")`
     background-color: #000;
     color: #fff;
   }
+  &:disabled{
+    cursor: not-allowed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
 `;
 
 const StyledLoading = styled("button")`
@@ -48,26 +57,22 @@ const StyledLoading = styled("button")`
 
 export const PrimaryButton: FC<
   ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ text, loading = false, className = "", ...props }) => {
+> = ({ text, state = 'clickable', className = "", ...props }) => {
 
   return (
     <>
-      {
-        !loading ?
-          (<StyledPrimary className={className} {...props}>
-            {text}
-          </StyledPrimary>) :
-          (
-            <StyledLoading className={className} {...props}>
-              <img
-                src="https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg"
-                alt="loading"
-                width="25px"
-              />
-              {text}
-            </StyledLoading>
-          )
-      }
+      <StyledPrimary className={className} disabled={state === 'loading' || state === 'typing'} {...props}>
+        {
+          state === 'loading' ?
+            <img
+              src="https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg"
+              alt="loading"
+              width="25px"
+            /> : ''
+        }
+
+        {text}
+      </StyledPrimary>
     </>
   );
 }
