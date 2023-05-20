@@ -50,25 +50,27 @@ export const PrimaryButton: FC<
   ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
 > = ({ text, loading = false, className = "", ...props }) => {
 
-  if (!loading) {
-    return (
-      <StyledPrimary className={className} {...props}>
-        {text}
-      </StyledPrimary>
-    );
-  }
-
   return (
-    <StyledLoading className={className} {...props}>
-      <img
-        src="https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg"
-        alt="loading"
-        width="25px"
-      />
-      {text}
-    </StyledLoading>
+    <>
+      {
+        !loading ?
+          (<StyledPrimary className={className} {...props}>
+            {text}
+          </StyledPrimary>) :
+          (
+            <StyledLoading className={className} {...props}>
+              <img
+                src="https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg"
+                alt="loading"
+                width="25px"
+              />
+              {text}
+            </StyledLoading>
+          )
+      }
+    </>
   );
-};
+}
 
 const StyleBtn3 = styled("button")`
   align-items: center;
