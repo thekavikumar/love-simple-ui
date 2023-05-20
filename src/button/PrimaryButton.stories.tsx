@@ -5,7 +5,9 @@ export const ButtonPrimary = () => (
   <PrimaryButton
     text={"Hello World! Click me to show current date :)"}
     onClick={() => {
-      alert("Hello World");
+      const now = new Date();
+      alert("Hello World " +  now);
+      
     }}
   />
 );

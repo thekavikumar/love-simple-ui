@@ -45,7 +45,8 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "goober": "^2.1.13"
+    "goober": "^2.1.13",
+    "ladle": "^0.0.0"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17 || ^18",
