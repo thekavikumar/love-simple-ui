@@ -7,6 +7,7 @@ export interface AlertProps {
   type?: 'success' | 'warning' | 'error';
   message?: string;
   className?: string;
+  timeout?:number;
   onClose?: () => void;
 }
 
@@ -53,13 +54,13 @@ const CloseIcon = styled(FontAwesomeIcon)`
   cursor: pointer;
 `;
 
-export const Alert: FC<AlertProps> = ({ type, message, className = '', onClose }) => {
+export const Alert: FC<AlertProps> = ({ type, message, timeout=6000 , className = '', onClose }) => {
   const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setVisible(false);
-    }, 6000);
+    }, timeout);
 
     return () => clearTimeout(timer);
   }, []);
