@@ -28,7 +28,6 @@ const StyledSearchBarInput = styled("input")`
         color: #B65FCF;
         font-weight: 700;
     }
-
     ${(props: SearchBarProps) => {
         if (props.dark) return (`
             background-color: black;
@@ -44,6 +43,10 @@ const StyledSearchBarButton = styled("button")`
     padding: 7px 20px;
     margin-left: 3px;
     cursor: pointer;
+    &:active {
+        transform: translateY(1px) scale(0.95);
+        transition-duration: 200ms;
+    }
 `
 export const SearchBar: FC<SearchBarProps> = ({ text = "", className= "", dark = false, ...props})=> {
     const [inputData, setInputData] = useState("");
