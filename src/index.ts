@@ -1,3 +1,4 @@
-import { PrimaryButton, Button3, Button4 } from "./button";
+import { PrimaryButton, LoadingButton, Button3, Button4 } from "./button";
+import { SearchBar } from "./searchBar";
 
-export { PrimaryButton, Button3, Button4 };
+export { PrimaryButton, LoadingButton, Button3, Button4, SearchBar };
