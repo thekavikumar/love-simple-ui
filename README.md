@@ -88,6 +88,10 @@ Contributions are welcomed! If you'd like to contribute to love-simple-ui, pleas
   <img src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/46ccc774-a2da-451c-8c7a-70d7ec5f630a" />
 </p>
 
+- First clone the forked repository to your local System: 
+```bash
+git clone <repository Url or ssh>
+```
 - Create a new branch: 
 ```bash
 git checkout -b <branch_name>
