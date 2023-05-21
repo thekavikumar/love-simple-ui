@@ -1,16 +1,14 @@
 import React, { ButtonHTMLAttributes, FC } from "react";
 import { styled, setup } from "goober";
 
+
+type buttonState = 'clickable' | 'typing' | 'loading'
 export interface ButtonProps {
   text?: string;
+  state?: buttonState;
   className?: string;
 }
 
-export interface LoadingButtonProps {
-  text?: string;
-  className?: string;
-  loading?: boolean;
-}
 export interface Button3Props {
   text?: string;
   className?: string;
@@ -32,6 +30,13 @@ const StyledPrimary = styled("button")`
     background-color: #000;
     color: #fff;
   }
+  &:disabled{
+    cursor: not-allowed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
 `;
 
 const StyledLoading = styled("button")`
@@ -52,30 +57,25 @@ const StyledLoading = styled("button")`
 
 export const PrimaryButton: FC<
   ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ text, className = "", ...props }) => {
-  return (
-    <StyledPrimary className={className} {...props}>
-      {text}
-    </StyledPrimary>
-  );
-};
+> = ({ text, state = 'clickable', className = "", ...props }) => {
 
-export const LoadingButton: FC<
-  LoadingButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ text, className = "", loading, ...props }) => {
   return (
-    <StyledLoading className={className} {...props}>
-      {loading && (
-        <img
-          src="https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg"
-          alt="loading"
-          width="25px"
-        />
-      )}
-      {text}
-    </StyledLoading>
+    <>
+      <StyledPrimary className={className} disabled={state === 'loading' || state === 'typing'} {...props}>
+        {
+          state === 'loading' ?
+            <img
+              src="https://res.cloudinary.com/dfmbuzf7l/image/upload/v1683257888/loading_fkc6bc.svg"
+              alt="loading"
+              width="25px"
+            /> : ''
+        }
+
+        {text}
+      </StyledPrimary>
+    </>
   );
-};
+}
 
 const StyleBtn3 = styled("button")`
   align-items: center;
