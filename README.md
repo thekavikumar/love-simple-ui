@@ -1,4 +1,30 @@
-# Getting Started
+<p align="center">
+<img width="100%" src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/f2292f5a-8a31-4fbc-92a7-651c2920143c" alt="Love Simple UI" />
+</p>
+<p align="center">
+  <a href="">
+    <img src="https://img.shields.io/travis/:thekavikumar/love-simple-ui" alt="Travis Status" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/npm/v/love-simple-ui" alt="weekly download" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/npm/dw/love-simple-ui" alt="weekly download" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/npm/l/love-simple-ui" alt="license" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/thekavikumar/love-simple-ui">
+  </a>
+</p>
+<p align="center">
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/thekavikumar/love-simple-ui?style=social">
+  </a>
+</p>
+
+## 🤔 What is Love-Simple-UI
 
 Welcome to love-simple-ui, it is a lightweight and fast library that provides a set of simple and easy-to-use UI components for React applications. These components are designed to be intuitive, customizable, and responsive, making it easy for developers to quickly create clean and modern user interfaces.
 
@@ -8,27 +34,39 @@ In addition to being lightweight, love-simple-ui is also fast. The library is op
 
 Overall, love-simple-ui is an excellent choice for developers who want to create fast and lightweight React applications with simple and intuitive user interfaces. Whether you are building a simple web application or a more complex enterprise application, love-simple-ui can help you create a great user experience without sacrificing performance.
 
-## Installation
+## 📄 Documentation
+
+Follow this link https://love-simple-ui.vercel.app/ to know more about different components.
+
+## 📦️ Installation
 
 To install love-simple-ui via npm, follow these steps:
 
 - Open a terminal window and navigate to your project directory
-- Run the following command: `npm install love-simple-ui`
-- Wait for the installation to complete. This may take a few minutes depending on your network connection and the size of the package.
+- Run the following command:
+  ```bash
+  npm install love-simple-ui # Wait for the installation to complete.
+  ```
+- If you want to add it as a development dependency
+  ```bash
+  npm install love-simple-ui --save-dev
+  ```
+- Alternatively, you can add love-simple-ui as a dependency to your project by including it in your package.json file.
+  ```bash
+  npm install love-simple-ui --save
+  ```
 
-Alternatively, you can add love-simple-ui as a dependency to your project by including it in your package.json file. To do this, run the following command in your terminal: `npm install love-simple-ui --save`
-
-## Usage
+## 🛠️ Usage
 
 To use love-simple-ui in your project, you must first import the library into your project. To do this, add the following line to the top of your JavaScript file:
 
-```js filename="App.js" {1} copy
+```jsx
 import { component } from "love-simple-ui";
 ```
 
 Once you've imported the library, you can use any of the components it contains. For example, to use the PrimaryButton component, simply add the following line to your code:
 
-```js filename="App.js" {1,6} copy
+```jsx
 import { PrimaryButton } from "love-simple-ui";
 
 function App() {
@@ -40,18 +78,32 @@ function App() {
 }
 ```
 
-## Contributing
+## 😍 Contributing
 
 Contributions are welcomed! If you'd like to contribute to love-simple-ui, please follow these steps:
 
 - Fork this repository
-- Create a new branch: `git checkout -b <branch_name>`
-- Make your changes and commit them: `git commit -m '<commit_message>'`
-- Push to the original branch: `git push origin love-simple-ui/<location>`
-- Create the pull request
+<p>
+  <img src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/46ccc774-a2da-451c-8c7a-70d7ec5f630a" />
+</p>
+
+- Create a new branch: 
+```bash
+git checkout -b <branch_name>
+```
+- Make your changes and commit them: 
+
+```bash
+git commit -m '<commit_message>'
+```
+- Push to the original branch: 
+```bash
+git push origin love-simple-ui/<location>
+```
+- Create the pull request from **Pull request** tab
 
 Alternatively, you can create a new issue if you find a bug or have a feature request.
 
 ## License
 
-This project uses the following license: [MIT](https://choosealicense.com/licenses/mit/).
+Licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
