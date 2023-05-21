@@ -107,3 +107,9 @@ Alternatively, you can create a new issue if you find a bug or have a feature re
 ## License
 
 Licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+## Contributors
+<p align="center">
+<a href="https://github.com/thekavikumar/love-simple-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=thekavikumar/love-simple-ui" />
+</a></p>
