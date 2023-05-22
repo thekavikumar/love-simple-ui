@@ -7,22 +7,22 @@
 
 ## Table Of Contents
 
-- [Resources](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#resources)
-- [Getting Started](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#getting-started)
-- [Development Environment Setup](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#development-environment-setup)
-- [How to Contribute](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#how-to-contribute)
-    - [Raise an Issue](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#raise-an-issue)
-        - [Bug Report](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#bug-report)
-        - [Documentation Issue](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#documentation-issue)
-        - [Feature Request](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#feature-request)
-        - [General Queries](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#general-queries)
-    - [Solve an Issue](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#solve-an-issue)
-    - [Submitting Pull Requests](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#submitting-pull-requests)
-        - [Using Command Line](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#using-command-line)
-        - [Using GitHub Desktop](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#using-github-desktop)
-- [Code of Conduct](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#code-of-conduct)
-- [Community Guidelines](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#community-guidelines)
-- [Licensing](notion://www.notion.so/GSSOC-23-c6becf534a2e4847b9a3c64158492a25#licensing)
+- [Resources](#resources)
+- [Getting Started](#getting-started)
+- [Development Environment Setup](#development-environment-setup)
+- [How to Contribute](#how-to-contribute)
+    - [Raise an Issue](#raise-an-issue)
+        - [Bug Report](#bug-report)
+        - [Documentation Issue](#documentation-issue)
+        - [Feature Request](#feature-request)
+        - [General Queries](#general-queries)
+    - [Solve an Issue](#solve-an-issue)
+    - [Submitting Pull Requests](#submitting-pull-requests)
+        - [Using Command Line](#using-command-line)
+        - [Using GitHub Desktop](#using-github-desktop)
+- [Code of Conduct](#code-of-conduct)
+- [Community Guidelines](#community-guidelines)
+- [Licensing](#licensing)
 
 ## Resources
 
@@ -164,7 +164,7 @@ Browse our list of open issues in the repository or on our issue tracker. Using 
 
 [`enhancement`](https://github.com/thekavikumar/love-simple-ui/labels/enhancement) - New feature or request
 
-[`good first issue`](https://github.com/thekavikumar/love-simple-ui/labels/good%20first%20issue): Good for new contributors
+[`good first issue`](https://github.com/thekavikumar/love-simple-ui/labels/good%20first%20issue) - Good for new contributors
 
 [`help wanted`](https://github.com/thekavikumar/love-simple-ui/labels/help%20wanted) - Extra attention is needed
 
