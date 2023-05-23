@@ -1,3 +1,4 @@
+<div id="top"></div>
 <p align="center">
 <img width="100%" src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/f2292f5a-8a31-4fbc-92a7-651c2920143c" alt="Love Simple UI" />
 </p>
@@ -93,11 +94,34 @@ Contributions are welcomed and appreciated! If you would like to contribute to l
 - Push to the original branch: `git push origin love-simple-ui/<location>`
 - Create a pull request
 
-Alternatively, you can create a new issue if you encounter a bug or have a feature request. We value community feedback and engagement.
+
+- First clone the forked repository to your local System: 
+```bash
+git clone <repository Url or ssh>
+```
+- Create a new branch: 
+```bash
+git checkout -b <branch_name>
+```
+- Make your changes and commit them: 
+
+```bash
+git commit -m '<commit_message>'
+```
+- Push to the original branch: 
+```bash
+git push origin love-simple-ui/<location>
+```
+- Create the pull request from **Pull request** tab
+
 
 ## License
 
 Licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
-Feel free to customize and adjust the sentences to better fit your project's style and specific requirements.
-```
+#Contributors
+<p align="center">
+<a href="https://github.com/thekavikumar/love-simple-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=thekavikumar/love-simple-ui" alt="Contributors" />
+</a>
+</p>
