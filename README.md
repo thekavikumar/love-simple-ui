@@ -46,15 +46,15 @@ To install love-simple-ui via npm, follow these steps:
 - Open a terminal window and navigate to your project directory
 - Run the following command:
   ```bash
-  npm install love-simple-ui # Wait for the installation to complete.
+  npm install @love-simple-ui/react # Wait for the installation to complete.
   ```
 - If you want to add it as a development dependency
   ```bash
-  npm install love-simple-ui --save-dev
+  npm install @love-simple-ui/react --save-dev
   ```
 - Alternatively, you can add love-simple-ui as a dependency to your project by including it in your package.json file.
   ```bash
-  npm install love-simple-ui --save
+  npm install @love-simple-ui/react --save
   ```
 
 ## 🛠️ Usage
@@ -62,13 +62,13 @@ To install love-simple-ui via npm, follow these steps:
 To use love-simple-ui in your project, you must first import the library into your project. To do this, add the following line to the top of your JavaScript file:
 
 ```jsx
-import { component } from "love-simple-ui";
+import { component } from "@love-simple-ui/react ";
 ```
 
 Once you've imported the library, you can use any of the components it contains. For example, to use the PrimaryButton component, simply add the following line to your code:
 
 ```jsx
-import { PrimaryButton } from "love-simple-ui";
+import { PrimaryButton } from "@love-simple-ui/react ";
 
 function App() {
   return (

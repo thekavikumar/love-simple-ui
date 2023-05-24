@@ -1,0 +1,59 @@
+{
+  "name": "@love-simple-ui/react",
+  "version": "0.0.1",
+  "description": "An open-source UI library for developers to make their life easier :)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thekavikumar/love-simple-ui.git"
+  },
+  "homepage": "https://love-simple-ui.vercel.app/",
+  "scripts": {
+    "ladle": "ladle serve",
+    "ladle:build": "ladle build",
+    "build": "tsup",
+    "start": "tsup --watch"
+  },
+  "keywords": [
+    "react",
+    "react-components",
+    "react-ui",
+    "ui-components",
+    "components"
+  ],
+  "author": "Kavi Kumar",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "devDependencies": {
+    "@ladle/react": "^2.12.3",
+    "@types/react": "^18.2.7",
+    "@types/react-dom": "^18.2.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8 || ^17 || ^18",
+    "react-dom": "^16.8 || ^17 || ^18"
+  },
+  "bugs": {
+    "url": "https://github.com/thekavikumar/love-simple-ui/issues"
+  },
+  "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "goober": "^2.1.13"
+  }
+}
