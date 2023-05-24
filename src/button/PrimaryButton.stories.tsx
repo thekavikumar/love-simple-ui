@@ -17,5 +17,3 @@ export const ButtonLoading = () => (
 export const ButtonThree = () => <Button3 text="Button 3" />;
 
 export const ButtonFour = () => <Button4 text="Button 4" />;
-
-
