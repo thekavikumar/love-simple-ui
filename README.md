@@ -1,21 +1,22 @@
+<div id="top"></div>
 <p align="center">
 <img width="100%" src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/f2292f5a-8a31-4fbc-92a7-651c2920143c" alt="Love Simple UI" />
 </p>
 <p align="center">
   <a href="">
-    <img src="https://img.shields.io/travis/:thekavikumar/love-simple-ui" alt="Travis Status" />
+    <img src="https://img.shields.io/travis/:thekavikumar/love-simple-ui?style=for-the-badge" alt="Travis Status" />
   </a>
   <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img src="https://img.shields.io/npm/v/love-simple-ui" alt="weekly download" />
+    <img src="https://img.shields.io/npm/v/love-simple-ui?style=for-the-badge" alt="weekly download" />
   </a>
   <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img src="https://img.shields.io/npm/dw/love-simple-ui" alt="weekly download" />
+    <img src="https://img.shields.io/npm/dw/love-simple-ui?style=for-the-badge" alt="weekly download" />
   </a>
   <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img src="https://img.shields.io/npm/l/love-simple-ui" alt="license" />
+    <img src="https://img.shields.io/npm/l/love-simple-ui?style=for-the-badge" alt="license" />
   </a>
   <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/thekavikumar/love-simple-ui">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/thekavikumar/love-simple-ui?style=for-the-badge">
   </a>
 </p>
 <p align="center">
@@ -24,15 +25,29 @@
   </a>
 </p>
 
+## 💻Tech Stack
+
+<p align="center">
+  <a href="">
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="javascript" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css" />
+  </a>
+</p>
+
 ## 🤔 What is Love-Simple-UI
 
 Welcome to love-simple-ui, it is a lightweight and fast library that provides a set of simple and easy-to-use UI components for React applications. These components are designed to be intuitive, customizable, and responsive, making it easy for developers to quickly create clean and modern user interfaces.
 
-One of the key features of love-simple-ui is its lightweight design. The package is optimized to have a minimal impact on application performance, allowing it to load quickly and operate smoothly. This is achieved by using only the essential code necessary to provide the desired functionality, without any unnecessary overhead or bloat.
+- One of the key features of love-simple-ui is its <b>lightweight design</b>. The package is optimized to have a minimal impact on application performance, allowing it to load quickly and operate smoothly. This is achieved by using only the essential code necessary to provide the desired functionality, without any unnecessary overhead or bloat.
 
-In addition to being lightweight, love-simple-ui is also fast. The library is optimized for performance, ensuring that even complex UI components can be rendered quickly and efficiently. This is achieved by using efficient algorithms, minimizing the number of DOM updates required, and leveraging other performance optimization techniques.
+- In addition to being lightweight, love-simple-ui is also <b>fast</b>. The library is optimized for performance, ensuring that even complex UI components can be rendered quickly and efficiently. This is achieved by using efficient algorithms, minimizing the number of DOM updates required, and leveraging other performance optimization techniques.
 
-Overall, love-simple-ui is an excellent choice for developers who want to create fast and lightweight React applications with simple and intuitive user interfaces. Whether you are building a simple web application or a more complex enterprise application, love-simple-ui can help you create a great user experience without sacrificing performance.
+- Overall, love-simple-ui is an excellent choice for developers who want to create <b>fast and lightweight React applications</b> with simple and intuitive user interfaces. Whether you are building a simple web application or a more complex enterprise application, love-simple-ui can help you create a great user experience without sacrificing performance.
 
 ## 📄 Documentation
 
@@ -87,6 +102,10 @@ Contributions are welcomed! If you'd like to contribute to love-simple-ui, pleas
   <img src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/46ccc774-a2da-451c-8c7a-70d7ec5f630a" />
 </p>
 
+- First clone the forked repository to your local System: 
+```bash
+git clone <repository Url or ssh>
+```
 - Create a new branch: 
 ```bash
 git checkout -b <branch_name>
@@ -107,3 +126,12 @@ Alternatively, you can create a new issue if you find a bug or have a feature re
 ## License
 
 Licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+## Contributors
+<p align="center">
+<a href="https://github.com/thekavikumar/love-simple-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=thekavikumar/love-simple-ui" />
+</a></p>
+
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
