@@ -2,7 +2,7 @@ import React from 'react';
 import Breadcrumbs from './Breadcrumbs';
 
 const App: React.FC = () => {
-  const paths = ['Home', 'Clothing', 'Women\'s Clothing', 'Dresses', 'Summer Collection'];
+  const paths = ['Home', 'Catalog', 'Women\'s Clothing', 'Dresses', 'shoes'];
 
   return (
     <div>
