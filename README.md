@@ -95,31 +95,53 @@ function App() {
 
 ## 😍 Contributing
 
-Contributions are welcomed! If you'd like to contribute to love-simple-ui, please follow these steps:
+We appreciate and encourage contributions! If you're interested in contributing to love-simple-ui, kindly follow these instructions:
 
-- Fork this repository
+- Fork the repository.
 <p>
   <img src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/46ccc774-a2da-451c-8c7a-70d7ec5f630a" />
 </p>
 
-- First clone the forked repository to your local System: 
-```bash
-git clone <repository Url or ssh>
-```
-- Create a new branch: 
-```bash
-git checkout -b <branch_name>
-```
-- Make your changes and commit them: 
+- Clone the project to your local machine using the following command
 
-```bash
-git commit -m '<commit_message>'
-```
-- Push to the original branch: 
-```bash
-git push origin love-simple-ui/<location>
-```
-- Create the pull request from **Pull request** tab
+   ```sh
+   git clone https://github.com/<your_github_username>/love-simple-ui.git
+   ```
+
+- Navigate to the project's root directory
+
+   ```sh
+   cd love-simple-ui
+   ```
+
+- Create your branch
+
+   ```sh
+   git checkout -b <your_branch_name>
+   ```
+
+- Make your changes
+
+- Stage your changes
+
+   ```sh
+   git add <filename>
+   ```
+
+- Commit your changes
+
+   ```sh
+   git commit -m "your-commit-message"
+   ```
+
+- Push your changes into your branch
+
+    ```sh
+    git push origin <your_branch_name>
+    ```
+
+- Submit a pull request to the original repository, clearly describing the changes you have made.
+
 
 Alternatively, you can create a new issue if you find a bug or have a feature request.
 
