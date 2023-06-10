@@ -1,0 +1,20 @@
+.bubble {
+    display: inline-block;
+    max-width: 70%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+  }
+  
+  .user {
+    background-color: #2ecc71;
+    color: #fff;
+    align-self: flex-end;
+  }
+  
+  .bot {
+    background-color: #3498db;
+    color: #fff;
+    align-self: flex-start;
+  }
+  
