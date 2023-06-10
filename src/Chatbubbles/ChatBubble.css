@@ -6,13 +6,13 @@
     border-radius: 10px;
   }
   
-  .user {
+  .user1{
     background-color: #2ecc71;
     color: #fff;
     align-self: flex-end;
   }
   
-  .bot {
+  .user2{
     background-color: #3498db;
     color: #fff;
     align-self: flex-start;
