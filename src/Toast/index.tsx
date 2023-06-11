@@ -10,19 +10,20 @@ export interface ToastProps{
     warn?: boolean;
     className?: string;
     duration?: number;
+    icon?: React.ReactElement;
 }
 
 setup(React.createElement)
 
 const ToastContainer = styled("div")<ToastProps>`
-    font-size: 20px;
+    font-size: 25px;
     background: ${(props)=> 
         props.error 
-        ? '#FF2400'
+        ? '#ff3333'
         : props.success
-        ? '#7CFC00'
+        ? '#339900'
         : props.warn
-        ? '#FFE14C' 
+        ? '#ffcc00' 
         : '#fffff'   
     };
     color: ${(props)=> 
@@ -45,6 +46,7 @@ export const Toast: FC<ToastProps> = ({
     warn,
     className,
     duration,
+    icon,
     ...props
 })=>{
     const [show,setShow] = useState(true)
@@ -68,7 +70,8 @@ export const Toast: FC<ToastProps> = ({
             warn={warn}
             className={className}
             {...props}>
-                {message}
+                {icon}
+               {message}
             </ToastContainer>
         </Fragment>
     )
