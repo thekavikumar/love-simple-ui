@@ -21,7 +21,6 @@ animation: fadeIn 1s ease both;
     z-index: 2;
     backdrop-filter: blur(20px);
 }
-position: a;
 
 `;
 
