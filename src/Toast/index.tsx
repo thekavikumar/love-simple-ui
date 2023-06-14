@@ -11,19 +11,19 @@ export interface ToastProps{
     className?: string;
     duration?: number;
     icon?: React.ReactElement;
+    title?: string;
 }
 
 setup(React.createElement)
 
 const ToastContainer = styled("div")<ToastProps>`
-    font-size: 25px;
     background: ${(props)=> 
         props.error 
-        ? '#ff3333'
+        ? '#DC143C'
         : props.success
         ? '#339900'
         : props.warn
-        ? '#ffcc00' 
+        ? '#FFE302' 
         : '#fffff'   
     };
     color: ${(props)=> 
@@ -31,11 +31,17 @@ const ToastContainer = styled("div")<ToastProps>`
         ? '#000000'
         : '#F5FEFD'
     };
-    height:70px;
-    width:380px;
-    border: '1px solid';
-    text-align: center;
+    height:120px;
+    width:420px;
+    border: 1px solid;
+    border-radius: 10px;
 `;
+
+const ToastTitle = styled("h2")<ToastProps>`
+    font-size: 20px;
+    margin: auto;
+    padding: 15px;
+`
 
 export const Toast: FC<ToastProps> = ({
     id,
@@ -47,6 +53,7 @@ export const Toast: FC<ToastProps> = ({
     className,
     duration,
     icon,
+    title,
     ...props
 })=>{
     const [show,setShow] = useState(true)
@@ -69,9 +76,14 @@ export const Toast: FC<ToastProps> = ({
             success={success}
             warn={warn}
             className={className}
+            title={title}
             {...props}>
-                {icon}
-               {message}
+                <ToastTitle>
+                    {icon}
+                    {title}
+                    <hr style={{borderTop: '2px solid white'}} />
+                    {message}
+                </ToastTitle>
             </ToastContainer>
         </Fragment>
     )

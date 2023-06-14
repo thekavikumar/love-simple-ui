@@ -6,18 +6,18 @@ import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
 
 export const ToastWarn = () =>{
     return (
-        <Toast duration={4000} warn={true} message='This is warning!' icon={<WarningAmberIcon style={{fontSize:'30px',position:'relative',top:'6px'}}/>}/>
+        <Toast duration={3000} warn={true} title='Warning' message='This is warning toast component!' icon={<WarningAmberIcon style={{fontSize:'30px',position:'relative',top:'8px'}}/>}/>
     )
 }
 
 export const ToastSuccess = () =>{
     return (
-        <Toast duration={4000} success={true} message='This is success' icon={<CheckCircleOutlineIcon style={{fontSize:'30px',position:'relative',top:'6px'}}/>}/>
+        <Toast duration={3000} success={true} title='Success' message='This is success toast component!' icon={<CheckCircleOutlineIcon style={{fontSize:'30px',position:'relative',top:'8px'}}/>}/>
     )
 }
 
 export const ToastError = () =>{
     return (
-        <Toast duration={4000} error={true} message='This is error!' icon={<ErrorOutlineIcon  style={{fontSize:'30px',position:'relative',top:'6px'}}/>}/>
+        <Toast duration={3000} error={true} title='Error' message='This is error toast component!' icon={<ErrorOutlineIcon  style={{fontSize:'30px',position:'relative',top:'8px'}}/>}/>
     )
 }
