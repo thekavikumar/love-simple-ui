@@ -1,15 +1,28 @@
-import React from 'react';
-import { Menu, MenuItem, MenuButton } from '@mui/material';
+import React, { useState } from 'react';
+import {
+  Menu,
+  MenuItem,
+  IconButton,
+  Button,
+  ListItemIcon,
+  ListItemText,
+} from '@material-ui/core';
+import { MoreVert as MoreVertIcon } from '@material-ui/icons';
 
 interface MenuProps {
-  options: string[];
-  onSelectOption: (option: string) => void;
+  options: MenuOption[];
 }
 
-const CustomMenu: React.FC<MenuProps> = ({ options, onSelectOption }) => {
-  const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
+interface MenuOption {
+  label: string;
+  icon?: JSX.Element;
+  onClick: () => void;
+}
 
-  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+const CustomMenu: React.FC<MenuProps> = ({ options }) => {
+  const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
+
+  const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorEl(event.currentTarget);
   };
 
@@ -17,22 +30,29 @@ const CustomMenu: React.FC<MenuProps> = ({ options, onSelectOption }) => {
     setAnchorEl(null);
   };
 
-  const handleOptionClick = (option: string) => {
-    onSelectOption(option);
-    handleClose();
-  };
-
   return (
     <div>
-      <MenuButton onClick={handleClick}>Open Menu</MenuButton>
+      <IconButton
+        aria-label="menu"
+        aria-controls="menu"
+        aria-haspopup="true"
+        onClick={handleClick}
+      >
+        <MoreVertIcon />
+      </IconButton>
       <Menu
+        id="menu"
         anchorEl={anchorEl}
+        keepMounted
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        {options.map((option) => (
-          <MenuItem key={option} onClick={() => handleOptionClick(option)}>
-            {option}
+        {options.map((option, index) => (
+          <MenuItem key={index} onClick={option.onClick}>
+            {option.icon && (
+              <ListItemIcon>{option.icon}</ListItemIcon>
+            )}
+            <ListItemText primary={option.label} />
           </MenuItem>
         ))}
       </Menu>

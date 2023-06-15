@@ -1,36 +1,40 @@
 import React from 'react';
-import CustomMenu from './CustomMenu';
-import { Story } from '../types';
+import { Story, Meta } from '@storybook/react';
+import { MoreVert as MoreVertIcon } from '@material-ui/icons';
 
-interface StoriesProps {
-  stories: Story[];
-}
+import CustomMenu, { MenuProps } from './CustomMenu';
 
-const Stories: React.FC<StoriesProps> = ({ stories }) => {
-  const handleOptionSelect = (option: string) => {
-    console.log('Selected option:', option);
-    // Perform any action based on the selected option
-  };
+export default {
+  title: 'Components/CustomMenu',
+  component: CustomMenu,
+} as Meta;
 
-  return (
-    <div>
-      <h1>Stories</h1>
-      <CustomMenu
-        options={['Option 1', 'Option 2', 'Option 3']}
-        onSelectOption={handleOptionSelect}
-      />
-      {stories.map((story) => (
-        <div key={story.id}>
-          <h3>{story.title}</h3>
-          <p>{story.content}</p>
-          <p>Author: {story.author}</p>
-        </div>
-      ))}
-    </div>
-  );
+const Template: Story<MenuProps> = (args) => <CustomMenu {...args} />;
+
+export const Default = Template.bind({});
+Default.args = {
+  options: [
+    {
+      label: 'Option 1',
+      onClick: () => {
+        // Handle option 1 click
+        console.log('Option 1 clicked');
+      },
+    },
+    {
+      label: 'Option 2',
+      icon: <MoreVertIcon />,
+      onClick: () => {
+        // Handle option 2 click
+        console.log('Option 2 clicked');
+      },
+    },
+    {
+      label: 'Option 3',
+      onClick: () => {
+        // Handle option 3 click
+        console.log('Option 3 clicked');
+      },
+    },
+  ],
 };
-
-export default Stories;
-
-/*The CustomMenu component is used with some example options (['Option 1', 'Option 2', 'Option 3']). You can customize these options according to your needs. The onSelectOption callback is passed to the CustomMenu component to handle the selection of an option. In this example, the selected option is logged to the console, but you can perform any action based on the selected option.
-*/
