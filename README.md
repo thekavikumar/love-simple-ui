@@ -49,10 +49,6 @@ Welcome to love-simple-ui, it is a lightweight and fast library that provides a 
 
 - Overall, love-simple-ui is an excellent choice for developers who want to create <b>fast and lightweight React applications</b> with simple and intuitive user interfaces. Whether you are building a simple web application or a more complex enterprise application, love-simple-ui can help you create a great user experience without sacrificing performance.
 
-## 📄 Documentation
-
-Follow this link https://love-simple-ui.vercel.app/ to know more about different components.
-
 ## 📦️ Installation
 
 To install love-simple-ui via npm, follow these steps:
