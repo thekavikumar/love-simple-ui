@@ -4,4 +4,4 @@ import { SearchBar } from "./searchBar";
 import { Input } from "./input";
 import { Accordion } from "./accordion";
 
-export { PrimaryButton, Button3, Button4 , Alert, SearchBar, Input, Accordion};
+export { PrimaryButton, Button3, Button4, Alert, SearchBar, Input, Accordion };
