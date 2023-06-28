@@ -1,6 +1,6 @@
 {
   "name": "love-simple-ui",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "An open-source UI library for developers to make their life easier :)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -39,13 +39,18 @@
     "@ladle/react": "^2.12.3",
     "@types/react": "^18.2.1",
     "@types/react-dom": "^18.2.2",
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.2",
     "tsup": "^6.7.0",
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "goober": "^2.1.13"
+    "clsx": "^1.2.1",
+    "goober": "^2.1.13",
+    "tailwind-merge": "^1.13.2"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17 || ^18",

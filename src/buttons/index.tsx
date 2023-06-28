@@ -1,5 +1,6 @@
 import React, { ButtonHTMLAttributes, FC } from "react";
 import { styled, setup } from "goober";
+import { cn } from "../lib/util";
 
 export interface Button1Props {
   text?: string;
@@ -74,7 +75,7 @@ export const Button1: FC<
 > = ({ children, className = "", fontSize, height, ...props }) => {
   return (
     <StyleBtn3
-      className={className}
+      className={cn("", className)}
       height={height}
       fontSize={fontSize}
       {...props}
