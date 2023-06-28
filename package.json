@@ -1,6 +1,6 @@
 {
   "name": "love-simple-ui",
-  "version": "1.0.15",
+  "version": "1.0.17",
   "description": "An open-source UI library for developers to make their life easier :)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -45,8 +45,6 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "@fortawesome/free-solid-svg-icons": "^6.4.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
     "goober": "^2.1.13"
   },
   "peerDependencies": {
