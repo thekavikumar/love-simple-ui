@@ -1,8 +1,9 @@
 import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
+import "./components/logo.module.css";
 
 const config: DocsThemeConfig = {
-  logo: <span>love-simple-ui</span>,
+  logo: <h1 className="logo">love simple ui </h1>,
   project: {
     link: "https://github.com/thekavikumar/love-simple-ui",
   },
