@@ -1,4 +1,12 @@
-# Another Page
+## Installation
+
+```bash copy
+npm install love-simple-ui
+# or
+yarn add love-simple-ui
+# or
+pnpm install love-simple-ui
+```
 
 ```js filename="demo.js" {3} copy
 let a = 1;
@@ -9,6 +17,7 @@ console.log(a);
 ## Component
 
 import { useState } from "react";
+import { Button1 } from "love-simple-ui";
 
 {/* Import CSS modules */}
 
@@ -21,10 +30,5 @@ export const Counter = () => {
   );
 };
 
+<Button1>Hello World</Button1>
 <Counter />
-
-## External Component
-
-import Counters from "../components/counters";
-
-<Counters />

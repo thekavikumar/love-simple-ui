@@ -2,7 +2,7 @@ import React from "react";
 import { DocsThemeConfig } from "nextra-theme-docs";
 
 const config: DocsThemeConfig = {
-  logo: <h1>love simple ui </h1>,
+  logo: <h1>love simple ui</h1>,
   project: {
     link: "https://github.com/thekavikumar/love-simple-ui",
   },
@@ -11,6 +11,11 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: "love-simple-ui Docs",
+  },
+  useNextSeoProps() {
+    return {
+      titleTemplate: "%s - love simple ui",
+    };
   },
 };
 
