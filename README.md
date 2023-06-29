@@ -7,6 +7,10 @@
     <img src="https://img.shields.io/npm/v/love-simple-ui?style=for-the-badge" alt="weekly download" />
   </a>
   <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/bundlephobia/minzip/love-simple-ui?style=for-the-badge&color=%230cc78c
+" alt="weekly download" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
     <img src="https://img.shields.io/npm/dw/love-simple-ui?style=for-the-badge" alt="weekly download" />
   </a>
   <a href="https://www.npmjs.com/package/love-simple-ui">
