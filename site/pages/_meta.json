@@ -1,9 +1,9 @@
 {
   "index": "Introduction",
-  "contact": {
-    "title": "Contact ↗",
+  "NPM Package": {
+    "title": "NPM Package 📦",
     "type": "page",
-    "href": "https://twitter.com/thekavikumar",
+    "href": "https://www.npmjs.com/package/love-simple-ui",
     "newWindow": true
   }
 }

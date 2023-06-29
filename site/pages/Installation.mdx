@@ -1,12 +1,25 @@
+import { Callout, Tab, Tabs, Steps } from 'nextra-theme-docs'
+import { Button1 } from "love-simple-ui";
+
 ## Installation
 
-```bash copy
-npm install love-simple-ui
-# or
-yarn add love-simple-ui
-# or
-pnpm install love-simple-ui
-```
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tab>
+    ```bash copy
+    pnpm i love-simple-ui
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy
+    npm i love-simple-ui
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy
+    yarn add love-simple-ui
+    ```
+  </Tab>
+</Tabs>
 
 ```js filename="demo.js" {3} copy
 let a = 1;
@@ -16,19 +29,4 @@ console.log(a);
 
 ## Component
 
-import { useState } from "react";
-import { Button1 } from "love-simple-ui";
-
-{/* Import CSS modules */}
-
-export const Counter = () => {
-  const [count, setCount] = useState(0);
-  return (
-    <div>
-      <button onClick={() => setCount(count + 1)}>Clicked {count} times</button>
-    </div>
-  );
-};
-
 <Button1>Hello World</Button1>
-<Counter />
