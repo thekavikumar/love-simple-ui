@@ -80,11 +80,6 @@ const config: DocsThemeConfig = {
   head: function useHead() {
     const { title } = useConfig();
     const { route } = useRouter();
-    const socialCard =
-      route === "/" || !title
-        ? "https://nextra.site/og.jpeg"
-        : `https://nextra.site/api/og?title=${title}`;
-
     return (
       <>
         <meta name="msapplication-TileColor" content="#fff" />
