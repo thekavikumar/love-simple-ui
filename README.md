@@ -21,7 +21,7 @@
 </p>
 <p align="center">
   <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/thekavikumar/love-simple-ui?style=social">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/thekavikumar/love-simple-ui?style=for-the-badge">
   </a>
 </p>
 
