@@ -1,5 +1,6 @@
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
+import countapi from "countapi-js";
 import { useConfig } from "nextra-theme-docs";
 
 const logo = (
@@ -105,6 +106,8 @@ const config: DocsThemeConfig = {
       </a>
     ),
   },
+  docsRepositoryBase:
+    "https://github.com/thekavikumar/love-simple-ui/tree/master/site",
   editLink: {
     text: "Edit this page on GitHub →",
   },

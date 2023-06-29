@@ -3,30 +3,142 @@ import { Button1 } from "love-simple-ui";
 
 ## Installation
 
+Follow the steps below to install the package and start using it.
+
+<Steps>
+
+### Create a new project
+Feel free to skip this step if you already have a project. You can use any framework you want, our library is framework agnostic. ✨
+```bash copy
+npx create-next-app my-app
+```
+
+### Setup Tailwind CSS
+We support Tailwind CSS out of the box, but you can use any other CSS-in-JS library.
+Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both tailwind.config.js and postcss.config.js. 🎨
 <Tabs items={['pnpm', 'npm', 'yarn']}>
   <Tab>
     ```bash copy
-    pnpm i love-simple-ui
+    pnpm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
     ```
   </Tab>
   <Tab>
     ```bash copy
-    npm i love-simple-ui
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
     ```
   </Tab>
   <Tab>
     ```bash copy
-    yarn add love-simple-ui
+    yarn add -D tailwindcss postcss autoprefixer
+    npx tailwindcss init -p
     ```
   </Tab>
 </Tabs>
 
-```js filename="demo.js" {3} copy
-let a = 1;
-
-console.log(a);
+### Configure Tailwind CSS
+Open tailwind.config.js and add the following code to the content array. This tells Tailwind which files to scan for class names. 📁
+```js filename="tailwind.config.js" copy
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+ 
+    // Or if using `src` directory:
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 ```
 
-## Component
+### Configure Tailwind directives to your CSS
+Add the @tailwind directives for each Tailwind's layers to your globals.css file.
+```css filename="globals.css" copy
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
 
-<Button1>Hello World</Button1>
+### Install the library
+Choose your package manager, we support `npm`, `yarn` and `pnpm`. 📦
+<Tabs items={['pnpm', 'npm', 'yarn']}>
+  <Tab>
+    ```bash copy
+    pnpm i love-simple-ui tailwind-merge clsx
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy
+    npm i love-simple-ui tailwind-merge clsx
+    ```
+  </Tab>
+  <Tab>
+    ```bash copy
+    yarn add love-simple-ui tailwind-merge clsx
+    ```
+  </Tab>
+</Tabs>
+
+### Setup the Util functions
+Create a file called `util.js` (`util.ts` if you are using typescript) within lib folder in the root of your project and add the following code. 🎉
+```js filename="lib/util.js" copy
+import { twMerge } from "tailwind-merge";
+import { ClassValue, clsx } from "clsx";
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs));
+}
+```
+
+### Import the Util functions
+Import the `cn` function from the `util.js` file and use it to merge the Tailwind classes. 🚀
+
+```js filename="pages/index.js" {1} copy
+import { cn } from "../lib/util";
+
+export default function Home() {
+  return (
+    <div className="text-xl font-medium">
+      Hello World
+    </div>
+  );
+}
+```
+
+### Start using the library
+You can now start using the library. 
+This is an example of how to use the Button component.
+This is fully customizable, you can use any Tailwind classes you want. 🎉
+
+```js filename="pages/index.js" {2,7,8,9} copy
+import React from 'react';
+import {Button1} from "love-simple-ui";
+
+function App() {
+  return (
+    <div>
+      <Button1 className="hover:underline">
+        Hello World
+      </Button1>
+    </div>
+  )
+}
+
+export default App;
+```
+
+</Steps>
+
+## References and Resources
+
+You can find more information about Tailwind CSS and its configuration on the links below.
+
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Tailwind Docs](https://tailwindcss.com/docs)
+- [Tailwind Play](https://play.tailwindcss.com/)
