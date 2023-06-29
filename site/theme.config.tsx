@@ -94,7 +94,7 @@ const config: DocsThemeConfig = {
     );
   },
   banner: {
-    key: "1.0.18-release",
+    key: "1.0.19-release",
     text: (
       <a
         href="https://www.npmjs.com/package/love-simple-ui"
