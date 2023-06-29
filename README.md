@@ -3,9 +3,6 @@
 <img width="100%" src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/f2292f5a-8a31-4fbc-92a7-651c2920143c" alt="Love Simple UI" />
 </p>
 <p align="center">
-  <a href="">
-    <img src="https://img.shields.io/travis/:thekavikumar/love-simple-ui?style=for-the-badge" alt="Travis Status" />
-  </a>
   <a href="https://www.npmjs.com/package/love-simple-ui">
     <img src="https://img.shields.io/npm/v/love-simple-ui?style=for-the-badge" alt="weekly download" />
   </a>
@@ -25,6 +22,8 @@
   </a>
 </p>
 
+#
+
 ## 💻Tech Stack
 
 <p align="center">
@@ -39,15 +38,27 @@
   </a>
 </p>
 
+#
+
 ## 🤔 What is Love-Simple-UI
 
-Welcome to love-simple-ui, it is a lightweight and fast library that provides a set of simple and easy-to-use UI components for React applications. These components are designed to be intuitive, customizable, and responsive, making it easy for developers to quickly create clean and modern user interfaces.
+`love-simple-ui` is an open-source, lightweight, and highly customizable UI library with integrated Tailwind CSS, designed to provide an attractive and efficient user interface for web applications.
 
-- One of the key features of love-simple-ui is its <b>lightweight design</b>. The package is optimized to have a minimal impact on application performance, allowing it to load quickly and operate smoothly. This is achieved by using only the essential code necessary to provide the desired functionality, without any unnecessary overhead or bloat.
+## Features
 
-- In addition to being lightweight, love-simple-ui is also <b>fast</b>. The library is optimized for performance, ensuring that even complex UI components can be rendered quickly and efficiently. This is achieved by using efficient algorithms, minimizing the number of DOM updates required, and leveraging other performance optimization techniques.
+- **Lightweight**: love-simple-ui is designed to be lightweight, ensuring fast loading times and optimal performance for your web applications.
 
-- Overall, love-simple-ui is an excellent choice for developers who want to create <b>fast and lightweight React applications</b> with simple and intuitive user interfaces. Whether you are building a simple web application or a more complex enterprise application, love-simple-ui can help you create a great user experience without sacrificing performance.
+- **Customizable**: With love-simple-ui, you have the freedom to customize every aspect of your user interface to match your desired style and branding. Tailwind CSS integration makes it even easier to tweak the UI to your liking.
+
+- **Beautiful Design**: The UI components provided by love-simple-ui are thoughtfully designed to be visually appealing and user-friendly, ensuring a delightful user experience.
+
+- **Responsive**: love-simple-ui is built with responsiveness in mind, ensuring that your web application looks great on any device or screen size.
+
+- **Easy to Use**: The library is designed to be beginner-friendly, allowing developers to quickly and effortlessly integrate it into their projects. The intuitive API and well-documented code make it easy to get started.
+
+- **Comprehensive Documentation**: love-simple-ui comes with comprehensive documentation that guides you through the installation process and provides detailed examples and usage instructions for each component.
+
+#
 
 ## 📦️ Installation
 
@@ -67,6 +78,8 @@ To install love-simple-ui via npm, follow these steps:
   npm install love-simple-ui --save
   ```
 
+#
+
 ## 🛠️ Usage
 
 To use love-simple-ui in your project, you must first import the library into your project. To do this, add the following line to the top of your JavaScript file:
@@ -78,16 +91,18 @@ import { component } from "love-simple-ui";
 Once you've imported the library, you can use any of the components it contains. For example, to use the PrimaryButton component, simply add the following line to your code:
 
 ```jsx
-import { PrimaryButton } from "love-simple-ui";
+import { Buttton1 } from "love-simple-ui";
 
 function App() {
   return (
     <div className="App">
-      <PrimaryButton text="Hello there!" />
+      <Button1>Hello World!</Button1>
     </div>
   );
 }
 ```
+
+#
 
 ## 😍 Contributing
 
@@ -98,36 +113,47 @@ Contributions are welcomed! If you'd like to contribute to love-simple-ui, pleas
   <img src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/46ccc774-a2da-451c-8c7a-70d7ec5f630a" />
 </p>
 
-- First clone the forked repository to your local System: 
+- First clone the forked repository to your local System:
+
 ```bash
 git clone <repository Url or ssh>
 ```
-- Create a new branch: 
+
+- Create a new branch:
+
 ```bash
 git checkout -b <branch_name>
 ```
-- Make your changes and commit them: 
+
+- Make your changes and commit them:
 
 ```bash
 git commit -m '<commit_message>'
 ```
-- Push to the original branch: 
+
+- Push to the original branch:
+
 ```bash
 git push origin love-simple-ui/<location>
 ```
+
 - Create the pull request from **Pull request** tab
 
 Alternatively, you can create a new issue if you find a bug or have a feature request.
+
+#
 
 ## License
 
 Licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
 
+#
+
 ## Contributors
+
 <p align="center">
 <a href="https://github.com/thekavikumar/love-simple-ui/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=thekavikumar/love-simple-ui" />
 </a></p>
-
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
