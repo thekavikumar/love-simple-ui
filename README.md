@@ -39,6 +39,9 @@
   <a href="https://www.npmjs.com/package/love-simple-ui">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css" />
   </a>
+ <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/TailWindCSS-1572B6?style=for-the-badge&logo=TailWindCSS&logoColor=white" alt="css" />
+  </a>
 </p>
 
 #
