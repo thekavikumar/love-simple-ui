@@ -33,12 +33,6 @@
   <a href="">
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript" />
   </a>
-  <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="javascript" />
-  </a>
-  <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css" />
-  </a>
  <a href="https://www.npmjs.com/package/love-simple-ui">
     <img src="https://img.shields.io/badge/TailWindCSS-1572B6?style=for-the-badge&logo=TailWindCSS&logoColor=white" alt="css" />
   </a>
