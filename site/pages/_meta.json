@@ -1,7 +1,7 @@
 {
   "index": "Introduction",
   "NPM Package": {
-    "title": "Package 📦",
+    "title": "NPM Package 📦",
     "type": "page",
     "href": "https://www.npmjs.com/package/love-simple-ui",
     "newWindow": true
