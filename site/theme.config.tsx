@@ -93,19 +93,23 @@ const config: DocsThemeConfig = {
         <meta httpEquiv="Content-Language" content="en" />
         <meta
           name="og:title"
-          content={title ? title + " - Love Simple UI" : "Nextra"}
+          content={title ? title + " - Love Simple UI" : "Love Simple UI"}
         />
       </>
     );
   },
-  // banner: {
-  //   key: '2.0-release',
-  //   text: (
-  //     <a href="https://nextra.site" target="_blank" rel="noreferrer">
-  //       🎉 Nextra 2.0 is released. Read more →
-  //     </a>
-  //   )
-  // },
+  banner: {
+    key: "1.0.18-release",
+    text: (
+      <a
+        href="https://www.npmjs.com/package/love-simple-ui"
+        target="_blank"
+        rel="noreferrer"
+      >
+        🎉 Love Simple UI 1.0.18 is released. Read more →
+      </a>
+    ),
+  },
   editLink: {
     text: "Edit this page on GitHub →",
   },
