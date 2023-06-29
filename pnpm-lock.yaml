@@ -1,4 +1,4 @@
-lockfileVersion: '6.1'
+lockfileVersion: '6.0'
 
 settings:
   autoInstallPeers: true
@@ -48,10 +48,10 @@ devDependencies:
     version: 3.3.2
   tsup:
     specifier: ^6.7.0
-    version: 6.7.0(postcss@8.4.24)(typescript@5.0.4)
+    version: 6.7.0(postcss@8.4.24)(typescript@5.1.6)
   typescript:
     specifier: ^5.0.4
-    version: 5.0.4
+    version: 5.1.6
 
 packages:
 
@@ -4087,7 +4087,7 @@ packages:
     engines: {node: '>=0.6.x'}
     dev: true
 
-  /tsup@6.7.0(postcss@8.4.24)(typescript@5.0.4):
+  /tsup@6.7.0(postcss@8.4.24)(typescript@5.1.6):
     resolution: {integrity: sha512-L3o8hGkaHnu5TdJns+mCqFsDBo83bJ44rlK7e6VdanIvpea4ArPcU3swWGsLVbXak1PqQx/V+SSmFPujBK+zEQ==}
     engines: {node: '>=14.18'}
     hasBin: true
@@ -4118,7 +4118,7 @@ packages:
       source-map: 0.8.0-beta.0
       sucrase: 3.32.0
       tree-kill: 1.2.2
-      typescript: 5.0.4
+      typescript: 5.1.6
     transitivePeerDependencies:
       - supports-color
       - ts-node
@@ -4137,9 +4137,9 @@ packages:
       mime-types: 2.1.35
     dev: true
 
-  /typescript@5.0.4:
-    resolution: {integrity: sha512-cW9T5W9xY37cc+jfEnaUvX91foxtHkza3Nw3wkoF4sSlKn0MONdkdEndig/qPBWXNkmplh3NzayQzCiHM4/hqw==}
-    engines: {node: '>=12.20'}
+  /typescript@5.1.6:
+    resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
+    engines: {node: '>=14.17'}
     hasBin: true
     dev: true
 
