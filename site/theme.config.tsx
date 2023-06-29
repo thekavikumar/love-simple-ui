@@ -101,7 +101,7 @@ const config: DocsThemeConfig = {
         target="_blank"
         rel="noreferrer"
       >
-        🎉 Love Simple UI 1.0.18 is released. Read more →
+        🎉 Love Simple UI 1.0.19 is released. Read more →
       </a>
     ),
   },
