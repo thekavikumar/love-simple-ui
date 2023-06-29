@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const InfiniteScroll = () => {
+const InfiniteScroll = ({ apiUrl }) => {
   const [data, setData] = useState([]);
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(false);
@@ -8,7 +8,7 @@ const InfiniteScroll = () => {
   const fetchData = async () => {
     setIsLoading(true);
     try {
-      const response = await fetch(`https://api.example.com/data?page=${page}`);
+      const response = await fetch(`${apiUrl}?page=${page}`);
       const newData = await response.json();
       setData(prevData => [...prevData, ...newData]);
       setPage(prevPage => prevPage + 1);
@@ -20,7 +20,7 @@ const InfiniteScroll = () => {
 
   useEffect(() => {
     fetchData();
-  }, []);
+  }, [apiUrl]);
 
   const handleScroll = () => {
     if (
