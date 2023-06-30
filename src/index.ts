@@ -1,5 +1,4 @@
-import "./global.css";
-import { Button1 } from "./buttons/index";
+import { Button1, Button2 } from "./buttons/index";
 
 // Path: src\buttons\index.ts
-export { Button1 };
+export { Button1, Button2 };
