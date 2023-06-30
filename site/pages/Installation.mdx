@@ -46,8 +46,8 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+    // tailwind scans the files in the order of the array
     "./node_modules/love-simple-ui/**/*.{js,ts,jsx,tsx,mdx}",
-    // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
@@ -86,8 +86,8 @@ Choose your package manager, we support `npm`, `yarn` and `pnpm`. 📦
 </Tabs>
 
 ### Setup the Util functions
-Create a file called `util.js` (`util.ts` if you are using typescript) within lib folder in the root of your project and add the following code. 🎉
-```js filename="lib/util.js" copy
+Create a file called `util.ts` within lib folder in the root of your project and add the following code. 🎉
+```ts filename="lib/util.ts" copy
 import { twMerge } from "tailwind-merge";
 import { ClassValue, clsx } from "clsx";
 
@@ -97,9 +97,9 @@ export function cn(...inputs: ClassValue[]) {
 ```
 
 ### Import the Util functions
-Import the `cn` function from the `util.js` file and use it to merge the Tailwind classes. 🚀
+Import the `cn` function from the `util.ts` file and use it to merge the Tailwind classes. 🚀
 
-```js filename="pages/index.js" {1} copy
+```js filename="pages/index.ts" {1} copy
 import { cn } from "../lib/util";
 
 export default function Home() {

@@ -2,9 +2,10 @@ import { defineConfig, Options } from "tsup";
 
 const commonConfig: Options = {
   minify: true,
+  splitting: true,
   dts: true,
   format: ["esm", "cjs"],
-  sourcemap: true,
+  //sourcemap: true,
   clean: true,
 };
 export default defineConfig([
@@ -17,6 +18,5 @@ export default defineConfig([
       };
     },
     entry: ["src/index.ts"],
-    outDir: "dist",
   },
 ]);

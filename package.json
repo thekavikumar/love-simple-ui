@@ -1,8 +1,9 @@
 {
   "name": "love-simple-ui",
-  "version": "1.0.24",
+  "version": "1.0.25",
   "description": "An open-source UI library for developers to make their life easier :)",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "scripts": {
     "test": "jest && eslint .",
     "ladle": "ladle serve",
+    "lint": "tsc",
     "build": "tsup && size-limit",
     "start": "tsup --watch"
   },
@@ -54,12 +56,13 @@
     "size-limit": "^8.2.6",
     "tailwindcss": "^3.3.2",
     "tsup": "^6.7.0",
-    "typescript": "^5.0.4"
+    "typescript": "^5.0.4",
+    "tailwind-merge": "^1.13.2",
+    "terser": "^5.18.2",
+    "clsx": "^1.2.1"
   },
   "dependencies": {
-    "clsx": "^1.2.1",
-    "goober": "^2.1.13",
-    "tailwind-merge": "^1.13.2"
+    "goober": "^2.1.13"
   },
   "peerDependencies": {
     "react": "^16.8 || ^17 || ^18",
