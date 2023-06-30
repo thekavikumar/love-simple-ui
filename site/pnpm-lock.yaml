@@ -5,12 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  clsx:
+    specifier: ^1.2.1
+    version: 1.2.1
   countapi-js:
     specifier: ^1.0.2
     version: 1.0.2
   love-simple-ui:
-    specifier: ^1.0.23
-    version: 1.0.23(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.0.24
+    version: 1.0.24(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0)
   lucide:
     specifier: ^0.256.0
     version: 0.256.0
@@ -29,6 +32,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: 18.2.0(react@18.2.0)
+  tailwind-merge:
+    specifier: ^1.13.2
+    version: 1.13.2
 
 devDependencies:
   '@types/node':
@@ -1675,8 +1681,8 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
-  /love-simple-ui@1.0.23(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-qs4PeE/KCyUbI5p0XxywC+AqdHqu/ufg1VCxwfD7P6OkwHYcHkg667Ma8JdEQD70W44cZQx8fiabeZKzYTZcQQ==}
+  /love-simple-ui@1.0.24(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-flduagpBJLeq0YV4ISPvGK2NaoFAIYUQ8YQzE+vqlKPLQVMqqJx0gjMPK6STDOxkmSyoCOkcd87wGqjWbcdXHg==}
     peerDependencies:
       react: ^16.8 || ^17 || ^18
       react-dom: ^16.8 || ^17 || ^18
