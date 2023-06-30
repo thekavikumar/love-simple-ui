@@ -1,6 +1,6 @@
 import { Callout, Tab, Tabs, Steps } from 'nextra-theme-docs'
 
-import {cn, Button1, Button2, Button3, Button4} from 'love-simple-ui'
+import { Button1, Button2, Button3, Button4,Button5, Button6,FaceBookButton,GithubButton,GoogleButton,MasterCardButton,PayPalButton,TwitterButton,} from 'love-simple-ui'
 
 ## Customizable Buttons
 
@@ -63,26 +63,48 @@ Button1 has sky blue and cyan gradient background button with a hover effect.
   </Tab>
 </Tabs>
 
-### Button2
-Button2 has purple and blue gradient background button with a hover effect.
+### Some More Buttons
+To use these below buttons follow the same code and replace the button name with the button name you want to use. For example, if you want to use Button4, replace Button3 with Button4.
+
+<div className="pt-4 flex items-center gap-3">
+<Button2>
+    Button 2
+</Button2>
+<Button3>
+    Button 3
+</Button3>
+<Button4>
+    Button 4
+</Button4>
+<Button5>
+    Button 5
+</Button5>
+<Button6>
+    Button 6
+</Button6>
+</div>
+
+## Social Media Buttons
+
+These buttons are used to link your social media accounts to your website and these are also customizable.
+To use these buttons follow the same code and replace the button name with the button name you want to use. For example, if you want to use FaceBookButton, replace Button3 with FaceBookButton.
+
+### FaceBookButton
+FaceBookButton has a Facebook icon and a hover effect.
 
 <Tabs items={['preview', 'code']}>
   <Tab>
-    <Button2>
-      Hello World
-    </Button2>
+    <FaceBookButton/>
   </Tab>
   <Tab>
     ```js filename="pages/index.js" {2,7,8,9} copy
     import React from 'react';
-    import { Button2 } from "love-simple-ui";
+    import { FaceBookButton } from "love-simple-ui";
 
     function App() {
         return (
             <div>
-                <Button2 className="font-medium">
-                    Hello World
-                </Button2>
+               <FaceBookButton className=""/>
             </div>
         )
     }
@@ -91,3 +113,50 @@ Button2 has purple and blue gradient background button with a hover effect.
     ```
   </Tab>
 </Tabs>
+
+### Some More Social Media Buttons
+To use these below buttons follow the same code and replace the button name with the button name you want to use. For example, if you want to use GithubButton, replace FaceBookButton with GithubButton.
+
+<div className="pt-4 flex items-center gap-3">
+<FaceBookButton/>
+<GithubButton/>
+<GoogleButton/>
+<TwitterButton/>
+</div>
+
+## Payment Buttons
+
+These buttons are used to link your payment accounts to your website and these are also customizable. To use these buttons follow the same code and replace the button name with the button name you want to use. For example, if you want to use MasterCardButton, replace PayPalButton with MasterCardButton.
+
+### PayPalButton
+PayPalButton has a PayPal icon and a hover effect.
+
+<Tabs items={['preview', 'code']}>
+  <Tab>
+    <PayPalButton/>
+  </Tab>
+  <Tab>
+    ```js filename="pages/index.js" {2,7,8,9} copy
+    import React from 'react';
+    import { PayPalButton } from "love-simple-ui";
+
+    function App() {
+        return (
+            <div>
+               <PayPalButton className=""/>
+            </div>
+        )
+    }
+
+    export default App;
+    ```
+  </Tab>
+</Tabs>
+
+### Some More Payment Buttons
+To use these below buttons follow the same code and replace the button name with the button name you want to use. For example, if you want to use MasterCardButton, replace PayPalButton with MasterCardButton.
+
+<div className="pt-4 flex items-center gap-3">
+<PayPalButton/>
+<MasterCardButton/>
+</div>
