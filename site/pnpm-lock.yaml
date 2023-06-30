@@ -9,8 +9,8 @@ dependencies:
     specifier: ^1.0.2
     version: 1.0.2
   love-simple-ui:
-    specifier: ^1.0.18
-    version: 1.0.18(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0)
+    specifier: ^1.0.20
+    version: 1.0.20(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0)
   lucide:
     specifier: ^0.256.0
     version: 0.256.0
@@ -1675,8 +1675,8 @@ packages:
       js-tokens: 4.0.0
     dev: false
 
-  /love-simple-ui@1.0.18(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-MCEclEjKtVPszhGLhJFuNcNl/5IpBfOV7dVCGSOepLSiHPIEtC6zi2vPn3uHCleqFizxhkg0WvxXFCKT8rJtpA==}
+  /love-simple-ui@1.0.20(csstype@3.1.1)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-meZkVywvbugxvO8a4VjY6egPh7POroR0ibDBo/vgKKhaayjYL+iulbVxOf2sYl6YW25s4zQw69SaC9CWX4LzvQ==}
     peerDependencies:
       react: ^16.8 || ^17 || ^18
       react-dom: ^16.8 || ^17 || ^18

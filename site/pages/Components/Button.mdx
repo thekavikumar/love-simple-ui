@@ -1,0 +1,92 @@
+import { Callout, Tab, Tabs, Steps } from 'nextra-theme-docs'
+import { Button1, Button2, Button3, Button4 } from 'love-simple-ui'
+
+## Customizable Buttons
+
+Buttons are html elements that can be used to trigger actions. They can be customized to fit your needs.
+We provides a large variety of styles and sizes for the button component including outlined buttons, multiple colors, sizes, buttons with icons, and more.
+
+<Steps>
+
+### Installation
+To use the buttons, you need to install the package first and complete the setup.
+Setup instructions can be found [here](https://love-simple-ui.vercel.app/Installation).
+
+### Import
+Import the buttons in your project.
+
+```js
+import { ButtonComponent } from 'love-simple-ui'
+```
+
+### Enjoy using the buttons
+You can now use the buttons in your project and customize them to fit your needs. 🎉
+</Steps>
+
+We have various types of buttons that can be used in your project. The types are listed below.
+
+## Gradient Background Buttons
+
+These buttons have a gradient background and a hover effect.
+
+<Callout emoji="💡">
+  You can use the <code>tailwindCSS</code> classes to customize the buttons.
+</Callout>
+
+### Button1
+Button1 has sky blue and cyan gradient background button with a hover effect.
+
+<Tabs items={['preview', 'code']}>
+  <Tab>
+    <Button1 className="hover:underline font-medium">
+      Hello World
+    </Button1>
+  </Tab>
+  <Tab>
+    ```js filename="pages/index.js" {2,7,8,9} copy
+    import React from 'react';
+    import { Button1 } from "love-simple-ui";
+
+    function App() {
+        return (
+            <div>
+                <Button1 className="hover:underline font-medium">
+                    Hello World
+                </Button1>
+            </div>
+        )
+    }
+
+    export default App;
+    ```
+  </Tab>
+</Tabs>
+
+### Button2
+Button1 has purple and blue gradient background button with a hover effect.
+
+<Tabs items={['preview', 'code']}>
+  <Tab>
+    <Button3 className="">
+      Hello World
+    </Button3>
+  </Tab>
+  <Tab>
+    ```js filename="pages/index.js" {2,7,8,9} copy
+    import React from 'react';
+    import { Button2 } from "love-simple-ui";
+
+    function App() {
+        return (
+            <div>
+                <Button2 className="font-medium">
+                    Hello World
+                </Button2>
+            </div>
+        )
+    }
+
+    export default App;
+    ```
+  </Tab>
+</Tabs>

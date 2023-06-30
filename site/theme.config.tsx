@@ -95,14 +95,14 @@ const config: DocsThemeConfig = {
     );
   },
   banner: {
-    key: "1.0.20-release",
+    key: "1.0.21-release",
     text: (
       <a
         href="https://www.npmjs.com/package/love-simple-ui"
         target="_blank"
         rel="noreferrer"
       >
-        🎉 Love Simple UI 1.0.20 is released. Read more →
+        🎉 Love Simple UI 1.0.21 is released. Read more →
       </a>
     ),
   },
