@@ -7,6 +7,7 @@ module.exports = {
     "./node_modules/love-simple-ui/**/*.{js,ts,jsx,tsx,mdx}",
     // Or if using `src` directory:
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./theme.config.tsx",
   ],
   theme: {
     extend: {},

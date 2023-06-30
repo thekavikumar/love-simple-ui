@@ -1,6 +1,5 @@
 import { DocsThemeConfig } from "nextra-theme-docs";
 import { useRouter } from "next/router";
-import countapi from "countapi-js";
 import { useConfig } from "nextra-theme-docs";
 
 const logo = (
@@ -127,13 +126,13 @@ const config: DocsThemeConfig = {
   },
   footer: {
     text: (
-      <div className="flex w-full flex-col items-center sm:items-start">
+      <div className="flex w-full items-center justify-between sm:items-start">
         <div>
           <a
-            className="flex items-center gap-1 text-current"
+            className="flex items-center  gap-1 text-current"
             target="_blank"
             rel="noopener noreferrer"
-            title="vercel.com homepage"
+            title="Github Organization of Innovix Labs"
             href="https://github.com/Innovix-Labs"
           >
             <span className="mb-2">Powered by</span>
@@ -163,8 +162,8 @@ const config: DocsThemeConfig = {
             </svg>
           </a>
         </div>
-        <p className="mt-6 text-xs">
-          © {new Date().getFullYear()} Love Simple UI.
+        <p className="text-md">
+          thekavikumar © {new Date().getFullYear()} Love Simple UI.
         </p>
       </div>
     ),
