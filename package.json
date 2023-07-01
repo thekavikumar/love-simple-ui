@@ -18,7 +18,7 @@
     }
   ],
   "scripts": {
-    "test": "jest && eslint .",
+    "test": "jest",
     "ladle": "ladle serve",
     "lint": "tsc",
     "build": "tsup && size-limit",
@@ -47,19 +47,20 @@
   "devDependencies": {
     "@ladle/react": "^2.12.3",
     "@size-limit/preset-big-lib": "^8.2.6",
-    "@types/react": "^18.2.1",
+    "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.2",
     "autoprefixer": "^10.4.14",
+    "clsx": "^1.2.1",
+    "jest": "^29.5.0",
     "postcss": "^8.4.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "size-limit": "^8.2.6",
-    "tailwindcss": "^3.3.2",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.4",
     "tailwind-merge": "^1.13.2",
+    "tailwindcss": "^3.3.2",
     "terser": "^5.18.2",
-    "clsx": "^1.2.1"
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.4"
   },
   "dependencies": {
     "goober": "^2.1.13"
