@@ -1,6 +1,6 @@
 {
   "name": "love-simple-ui",
-  "version": "1.0.25",
+  "version": "1.0.26",
   "description": "An open-source UI library for developers to make their life easier :)",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -51,7 +51,6 @@
     "@types/react-dom": "^18.2.2",
     "autoprefixer": "^10.4.14",
     "clsx": "^1.2.1",
-    "jest": "^29.5.0",
     "postcss": "^8.4.24",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

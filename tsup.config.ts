@@ -5,7 +5,7 @@ const commonConfig: Options = {
   splitting: true,
   dts: true,
   format: ["esm", "cjs"],
-  //sourcemap: true,
+  skipNodeModulesBundle: true,
   clean: true,
 };
 export default defineConfig([
