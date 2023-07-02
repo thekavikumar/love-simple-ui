@@ -7,6 +7,7 @@ export interface ButtonProps {
   className?: string;
   fontSize?: number;
   height?: number;
+  role?: string;
 }
 
 // props for styled component
@@ -72,10 +73,12 @@ const StyleBtn3 = styled("button")<Props>`
 // functional component with props
 export const Button1: FC<
   ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ children, className = "", fontSize, height, ...props }) => {
+> = ({ children, className = "", role, fontSize, height, ...props }) => {
   return (
     <StyleBtn3
+      aria-label="Button 1"
       className={cn("", className)}
+      role={role}
       height={height}
       fontSize={fontSize}
       {...props}
@@ -88,13 +91,15 @@ export const Button1: FC<
 // Button with gradient background from blue to purple
 export const Button2: FC<
   ButtonProps & ButtonHTMLAttributes<HTMLButtonElement>
-> = ({ children, className = "", ...props }) => {
+> = ({ children, className = "",role, ...props }) => {
   return (
-    <button
+    <button 
+    aria-label="Button 2"
       className={cn(
         "text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2",
         className
       )}
+      role={role}
       {...props}
     >
       {children}
@@ -108,6 +113,7 @@ export const Button3: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="Button 3"
       className={cn(
         "text-white bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-cyan-300 dark:focus:ring-cyan-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2",
         className
@@ -125,6 +131,7 @@ export const Button4: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="Button 4"
       className={cn(
         "text-white bg-gradient-to-br from-pink-500 to-orange-400 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2",
         className
@@ -142,6 +149,7 @@ export const Button5: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="Button 5"
       className={cn(
         "relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-purple-600 to-blue-500 group-hover:from-purple-600 group-hover:to-blue-500 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800",
         className
@@ -161,6 +169,7 @@ export const Button6: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="Button 6"
       className={cn(
         "relative inline-flex items-center justify-center p-0.5 mb-2 mr-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-pink-500 to-orange-400 group-hover:from-pink-500 group-hover:to-orange-400 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-pink-200 dark:focus:ring-pink-800",
         className
@@ -180,6 +189,7 @@ export const FaceBookButton: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="facebook-button"
       className={cn(
         "text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 mr-2 mb-2",
         className
@@ -212,6 +222,7 @@ export const TwitterButton: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="twitter-button"
       className={cn(
         "text-white bg-[#1da1f2] hover:bg-[#1da1f2]/90 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2",
         className
@@ -244,6 +255,7 @@ export const GithubButton: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="github-button"
       className={cn(
         "text-white bg-[#24292F] hover:bg-[#24292F]/90 focus:ring-4 focus:outline-none focus:ring-[#24292F]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-500 dark:hover:bg-[#050708]/30 mr-2 mb-2",
         className
@@ -276,6 +288,7 @@ export const GoogleButton: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="google-button"
       className={cn(
         "text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 mr-2 mb-2",
         className
@@ -308,6 +321,7 @@ export const PayPalButton: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="paypal-button"
       className={cn(
         "text-gray-900 bg-[#F7BE38] hover:bg-[#F7BE38]/90 focus:ring-4 focus:outline-none focus:ring-[#F7BE38]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#F7BE38]/50 mr-2 mb-2",
         className
@@ -340,6 +354,7 @@ export const MasterCardButton: FC<
 > = ({ children, className = "", ...props }) => {
   return (
     <button
+    aria-label="mastercard-button"
       className={cn(
         "text-gray-900 bg-white hover:bg-gray-100 border border-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-gray-600 dark:bg-gray-800 dark:border-gray-700 dark:text-white dark:hover:bg-gray-700 mr-2 mb-2",
         className
