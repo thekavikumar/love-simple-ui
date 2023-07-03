@@ -121,40 +121,82 @@ function App() {
 
 ## 😍 Contributing
 
-Contributions are welcomed! If you'd like to contribute to love-simple-ui, please follow these steps:
+Contributions are welcomed! If you think that you can add a new feature or want to fix a bug. We invite you to contribute to love-simple-ui and make this project better. To start contributing, follow the below instructions:
 
-- Fork this repository
-<p>
-  <img src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/46ccc774-a2da-451c-8c7a-70d7ec5f630a" />
-</p>
+1. Create a folder at your desire location (usually at your desktop).
 
-- First clone the forked repository to your local System:
+2. Open Git Bash Here.
 
-```bash
-git clone <repository Url or ssh>
+3. Create a Git repository.
+
+   Run command `git init`
+
+4. Fork the [repository](https://github.com/thekavikumar/love-simple-ui.git).
+
+5. Clone your forked repository of project.
+
+```git clone
+git clone https://github.com/<your_username>/love-simple-ui.git
 ```
 
-- Create a new branch:
-
-```bash
-git checkout -b <branch_name>
+6. Navigate to the project directory.
+```
+cd love-simple-ui
 ```
 
-- Make your changes and commit them:
+7. Add a reference(remote) to the original repository.
 
-```bash
-git commit -m '<commit_message>'
+```
+git remote add upstream
+https://github.com/thekavikumar/love-simple-ui.git
 ```
 
-- Push to the original branch:
+8. Always take a pull from the upstream repository to ypur main branch to keep it updated as per the main project repository.
 
-```bash
-git push origin love-simple-ui/<location>
+```
+git pull upstream main
 ```
 
-- Create the pull request from **Pull request** tab
+10. Create a new branch(prefer a branch name that relates to your assigned issue).
 
-Alternatively, you can create a new issue if you find a bug or have a feature request.
+```
+git checkout -b <YOUR_BRANCH_NAME>
+```
+
+11. Perform your desired changes to the code base.
+
+12. Check your changes.
+```
+git status
+```
+
+13. Stage your changes.
+```
+git diff
+```
+
+14. Commit your changes.
+```
+git commit -m "relevant message"
+```
+
+15. Push the committed chages in your feature branch to your remote repository.
+```
+git push -u origin <your_branch_name>
+```
+
+16. To create a pull request, click on `compare and pull requests`.
+
+17. Add an appropriate title and description to your PR explaining your changes.
+
+18. Click on `create pull request`.
+
+Congratulations🎉, you have made a PR to the love-simple-ui.
+Wait for you submission to be accepted and your PR to be merged by a maintainer.
+
+If you have any doubts please let us know in the comments.
+
+### BE OPEN!
 
 #
 
