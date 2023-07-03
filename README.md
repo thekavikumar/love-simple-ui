@@ -147,8 +147,7 @@ cd love-simple-ui
 7. Add a reference(remote) to the original repository.
 
 ```
-git remote add upstream
-https://github.com/thekavikumar/love-simple-ui.git
+git remote add upstream https://github.com/thekavikumar/love-simple-ui.git
 ```
 
 8. Always take a pull from the upstream repository to ypur main branch to keep it updated as per the main project repository.
