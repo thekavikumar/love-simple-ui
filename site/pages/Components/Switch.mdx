@@ -1,0 +1,179 @@
+import React, { useState } from "react";
+import { Callout, Tab, Tabs, Steps } from "nextra-theme-docs";
+import {Switch} from 'love-simple-ui'
+
+### Switch
+
+A customizable switch component with color, checked state, and icon support.
+
+<Steps>
+
+### Installation
+
+To use the switch, you need to install the package first and complete the setup.
+Setup instructions can be found [here](https://love-simple-ui.vercel.app/Installation).
+
+### Import
+
+Import the switch in your project.
+
+```js
+import { Switch } from "love-simple-ui";
+```
+
+### Enjoy using the switch
+
+You can now use the switch in your project and customize them to fit your needs. 🎉
+
+</Steps>
+
+### Props
+
+{<table>
+
+  <thead >
+    <tr>
+      <th>
+        Name
+      </th>
+      <th>
+        Type
+      </th>
+      <th>
+        Default
+      </th>
+       <th>
+        Required
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    {[
+      { name: 'bgColor', type: 'string', default:"bg-gray-300", required:"false",description:"Background color of the switch" },
+      { name: 'color', type: 'string', default:"bg-green-500",required:"false", description:"The color of the component. It supports tailwind colors" },
+      { name: 'icon', type: 'JSX.Element', default:"", required:"false", description:"The icon to display when the component is unchecked." },
+      { name: 'isChecked', type: 'bool', default:"false", required:"true",description:"If true, the component is checked." },
+      { name: 'size', type: 'string', default:"md", required:"false", description:"To define size of the switch" },
+    ].map(item => (
+      <tr key={item.name}>
+        <td>{item.name}</td>
+        <td>{item.type}</td>
+        <td>{item.default}</td>
+        <td>{item.required}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>}
+
+### Example Usage
+
+#### Dark mode
+
+<Tabs items={['Preview','Code']}>
+    <Tab>
+export const SwitchWithIcon = () => {
+  const [isChecked, setIsChecked] = useState(false)
+  return (<Switch
+        color={isChecked ? "bg-gray-600" : "bg-gray-300"}
+        icon={<img src={isChecked ? '/static/images/moon.png' : '/static/images/sun.png'} />}
+        isChecked={isChecked}
+        onChange={() => setIsChecked((prev) => !prev)}
+    />);
+};
+
+<SwitchWithIcon/>
+
+    </Tab>
+    <Tab>
+    
+```jsx
+import React, { useState } from "react";
+import Switch from "love-simple-ui";
+import moon from "./assets/moon.png";
+import sum from "./assets/sun.png";
+
+const SwitchWithIcon = () => {
+    const [isChecked, setIsChecked] = useState(false);
+    return (
+        <Switch
+        color={isChecked ? "bg-gray-600" : "bg-gray-300"}
+        icon={<img src={isChecked ? moon : sun} />}
+        isChecked={isChecked}
+        onChange={() => setIsChecked((prev) => !prev)}
+        />
+    );
+};
+````
+    </Tab>
+</Tabs>
+
+
+#### Custom color
+
+<Tabs items={['Preview','Code']}>
+    <Tab>
+export const Component = () => {
+  const [isChecked, setIsChecked] = useState(false)
+  return (
+    <Switch color="bg-blue-600" isChecked={isChecked} onChange={()=>setIsChecked(prev=>!prev)}/>
+  );
+};
+
+<Component/>
+    </Tab>
+    <Tab>
+```jsx
+export const SwitchWithColor = () => {
+  const [isChecked, setisChecked] = useState<boolean>(false);
+  return (
+    <Switch
+      isChecked={isChecked}
+      color="bg-blue-600 "
+      onChange={() => setisChecked((prev) => !prev)}
+    />
+  );
+};
+````
+
+    </Tab>
+
+</Tabs>
+
+
+#### Adjust Size
+
+<Tabs items={['Preview','Code']}>
+    <Tab>
+export const SwitchWithSize = () => {
+  const [isChecked1, setIsChecked1] = useState(false)
+  const [isChecked2, setIsChecked2] = useState(false)
+  const [isChecked3, setIsChecked3] = useState(false)
+  return (
+    <div className="flex space-x-10">
+    <Switch switchSize="sm" color="bg-blue-600" isChecked={isChecked1} onChange={()=>setIsChecked1(prev=>!prev)}/>
+    <Switch switchSize="md" color="bg-blue-600" isChecked={isChecked2} onChange={()=>setIsChecked2(prev=>!prev)}/>
+    <Switch switchSize="lg" color="bg-blue-600" isChecked={isChecked3} onChange={()=>setIsChecked3(prev=>!prev)}/>
+    </div>
+  );
+};
+
+<SwitchWithSize/>
+
+    </Tab>
+    <Tab>
+```jsx
+export const SwitchWithSize = () => {
+  const [isChecked, setisChecked] = useState<boolean>(false);
+  return (
+    <div className="flex space-x-10">
+      <Switch switchSize="sm" color="bg-blue-600" isChecked={isChecked} onChange={()=>setIsChecked(prev=>!prev)}/>
+      <Switch switchSize="md" color="bg-blue-600" isChecked={isChecked} onChange={()=>setIsChecked(prev=>!prev)}/>
+      <Switch switchSize="lg" color="bg-blue-600" isChecked={isChecked} onChange={()=>setIsChecked(prev=>!prev)}/>
+    </div>
+  );
+};
+````
+
+    </Tab>
+
+</Tabs>
