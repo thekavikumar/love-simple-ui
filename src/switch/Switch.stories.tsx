@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Switch from ".";
-import moon from "./assets/moon.png";
-import sum from "./assets/sun.png";
+const sun = "https://res.cloudinary.com/dh6gxe3jq/image/upload/v1689526523/sun_savvep.png";
+const moon = "https://res.cloudinary.com/dh6gxe3jq/image/upload/v1689526523/moon_zzxv5z.png";
 
 // Switch with icon
 export const SwitchWithIcon = () => {
@@ -9,7 +9,7 @@ export const SwitchWithIcon = () => {
   return (
     <Switch
       color={isChecked ? "bg-gray-600" : "bg-gray-300"}
-      icon={<img src={isChecked ? moon : sum} />}
+      icon={<img src={isChecked ? moon : sun} />}
       isChecked={isChecked}
       onChange={() => setisChecked((prev) => !prev)}
     />
