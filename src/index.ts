@@ -13,6 +13,8 @@ import {
   TwitterButton,
 } from "./buttons/index";
 
+import Switch from "./switch";
+
 // Path: src\buttons\index.ts
 export {
   Button1,
@@ -27,4 +29,7 @@ export {
   MasterCardButton,
   PayPalButton,
   TwitterButton,
+  Switch
 };
+
+
