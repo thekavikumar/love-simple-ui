@@ -9,7 +9,6 @@ export interface ToastProps{
     message?: string;
     success?: boolean;
     warn?: boolean;
-    className?: string;
     duration?: number;
     icon?: React.ReactElement;
     title?: string;
@@ -20,11 +19,11 @@ setup(React.createElement)
 const ToastContainer = styled("div")<ToastProps>`
     background: ${(props)=> 
         props.error 
-        ? '#DC143C'
+        ? 'rgb(239 68 68)'
         : props.success
-        ? '#339900'
+        ? 'rgb(34 197 94)'
         : props.warn
-        ? '#FFE302' 
+        ? 'rgb(234 179 8)' 
         : '#fffff'   
     };
     color: ${(props)=> 
@@ -32,10 +31,9 @@ const ToastContainer = styled("div")<ToastProps>`
         ? '#000000'
         : '#F5FEFD'
     };
-    height:120px;
+    height:100px;
     width:420px;
     border: 1px solid;
-    border-radius: 10px;
 `;
 
 const movingLineAnimation = keyframes`
@@ -58,16 +56,20 @@ const ToastTitle = styled("h2")<ToastProps>`
     font-size: 20px;
     margin: auto;
     padding: 15px;
+    position: relative;
+    bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
 `
 
 const CrossButton = styled('button')<ToastProps>`
     position: absolute;
     background: none;
-    font-size:25px;
     border: none;
     color: white;
     cursor: pointer;
-    left: 27rem;
+    left: 27.5rem;
+    font-size:25px;
 `
 
 export const Toast: FC<ToastProps> = ({
@@ -77,7 +79,6 @@ export const Toast: FC<ToastProps> = ({
     message,
     success,
     warn,
-    className,
     duration,
     icon,
     title,
@@ -105,10 +106,10 @@ export const Toast: FC<ToastProps> = ({
             error={error}
             success={success}
             warn={warn}
-            className={className}
+            className='shadow-xl border-none'
             title={title}
             {...props}>
-                <CrossButton onClick={toggle}>x</CrossButton>
+                <CrossButton className='cursor-pointer' onClick={toggle}>x</CrossButton>
                 <ToastTitle>
                     {icon}
                     {title}
