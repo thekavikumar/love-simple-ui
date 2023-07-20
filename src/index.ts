@@ -12,7 +12,6 @@ import {
   PayPalButton,
   TwitterButton,
 } from "./buttons/index";
-
 import { Toast } from "./toast/index";
 
 // Path: src\buttons\index.ts
@@ -31,3 +30,5 @@ export {
   TwitterButton,
   Toast
 };
+
+
