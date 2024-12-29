@@ -6,13 +6,14 @@
     "email": "Kavikumarceo@gmail.com",
     "url": "https://thekavikumar.vercel.app"
   },
-  "license":"MIT",
+  "license": "MIT",
+  "homepage": "https://love-simple-ui.vercel.app",
   "description": "A simple and lightweight UI library for React",
   "repository": {
     "type": "git",
-    "directory": "https://github.com/thekavikumar/love-simple-ui.git"
+    "url": "https://github.com/thekavikumar/love-simple-ui.git"
   },
-  "version": "2.0.3",
+  "version": "4.0.0",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
