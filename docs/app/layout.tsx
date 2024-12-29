@@ -20,10 +20,10 @@ const monoFont = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AriaDocs - Template",
-  metadataBase: new URL("https://ariadocs.vercel.app/"),
+  title: 'Love Simple UI',
+  metadataBase: new URL('https://love-simple-ui.vercel.app/'),
   description:
-    "This comprehensive documentation template, crafted with Next.js and available as open-source, delivers a sleek and responsive design, tailored to meet all your project documentation requirements.",
+    'A lightweight, open-source React component library featuring 50+ customizable components, optimized for performance with tree-shaking and modular imports. Perfect for building modern, scalable interfaces.',
 };
 
 export default function RootLayout({
