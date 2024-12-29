@@ -15,14 +15,6 @@
   <a href="https://www.npmjs.com/package/love-simple-ui">
     <img src="https://img.shields.io/npm/l/love-simple-ui?style=for-the-badge" alt="license" />
   </a>
-  <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img alt="GitHub issues" src="https://img.shields.io/github/issues/thekavikumar/love-simple-ui?style=for-the-badge">
-  </a>
-</p>
-<p align="center">
-  <a href="https://www.npmjs.com/package/love-simple-ui">
-    <img alt="GitHub forks" src="https://img.shields.io/github/forks/thekavikumar/love-simple-ui?style=for-the-badge">
-  </a>
 </p>
 
 #
