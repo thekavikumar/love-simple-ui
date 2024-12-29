@@ -26,7 +26,7 @@ export default function Home() {
       </p>
       <div className="flex flex-row items-center gap-5">
         <Link
-          href="/docs/getting-started"
+          href="/docs/getting-started/introduction"
           className={buttonVariants({ className: 'px-6', size: 'lg' })}
         >
           Get Started
