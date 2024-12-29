@@ -1,100 +1,174 @@
-## AriaDocs - Documentation Template
+<div id="top"></div>
+<p align="center">
+<img width="100%" src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/f2292f5a-8a31-4fbc-92a7-651c2920143c" alt="Love Simple UI" />
+</p>
+<p align="center">
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/npm/v/love-simple-ui?style=for-the-badge" alt="weekly download" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/bundlephobia/minzip/love-simple-ui?style=for-the-badge&color=%230cc78c" alt="minzip" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/npm/dw/love-simple-ui?style=for-the-badge" alt="weekly download" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/npm/l/love-simple-ui?style=for-the-badge" alt="license" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img alt="GitHub issues" src="https://img.shields.io/github/issues/thekavikumar/love-simple-ui?style=for-the-badge">
+  </a>
+</p>
+<p align="center">
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/thekavikumar/love-simple-ui?style=for-the-badge">
+  </a>
+</p>
 
-This feature-packed documentation template, built with Next.js, offers a sleek and responsive design, perfect for all your project documentation needs.
+#
 
-<img src="./public/public-og.png" />
+## 💻Tech Stack
 
-<br/>
+<p align="center">
+  <a href="">
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="typescript" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="javascript" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/NodeJS-323330?style=for-the-badge&logo=Node.js&logoColor=F7DF1E" alt="NodeJS" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="css" />
+  </a>
+ <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/TailWindCSS-1572B6?style=for-the-badge&logo=TailWindCSS&logoColor=white" alt="css" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/StoryBook-323330?style=for-the-badge&logo=StoryBook&logoColor=F7DF1E" alt="StoryBook" />
+  </a>
+  <a href="https://www.npmjs.com/package/love-simple-ui">
+    <img src="https://img.shields.io/badge/mdx-323330?style=for-the-badge&logo=mdx&logoColor=F7DF1E" alt="mdx" />
+  </a>
+</p>
 
-Here are all versions of the AriaDocs template, each crafted for specific use cases:
+#
 
+## 🤔 What is Love-Simple-UI
 
-- **Advanced Docs:** A comprehensive template offering extensive features for in-depth documentation needs. Perfect for larger projects that require detailed explanations and advanced configurations.  
-  [Explore the Advanced Docs](https://github.com/nisabmohd/Aria-Docs/tree/master)
+`love-simple-ui` is an open-source, lightweight, and highly customizable UI library with integrated Tailwind CSS, designed to provide an attractive and efficient user interface for web applications.
 
-- **Lite Version:** A streamlined, no-frills template perfect for straightforward documentation needs.  
-  [Explore the Lite Version](https://github.com/nisabmohd/Aria-Docs/tree/minimal-docs)
+## Features
 
-- **Version with Versioning:** A powerful option for projects that require historical documentation tracking. Manage multiple versions of your docs effortlessly.  
-  [Check out the Versioning Feature](https://github.com/nisabmohd/Aria-Docs/tree/version_docs)
+- **Lightweight**: love-simple-ui is designed to be lightweight, ensuring fast loading times and optimal performance for your web applications.
 
-- **i18n Support Version (WIP):** Designed for international audiences, this version will offer comprehensive multilingual support.  
-  [Preview the i18n Support](https://github.com/nisabmohd/Aria-Docs/tree/i18n-support)
+- **Customizable**: With love-simple-ui, you have the freedom to customize every aspect of your user interface to match your desired style and branding. Tailwind CSS integration makes it even easier to tweak the UI to your liking.
 
-### Quick Start
+- **Beautiful Design**: The UI components provided by love-simple-ui are thoughtfully designed to be visually appealing and user-friendly, ensuring a delightful user experience.
 
-You can create a new Ariadocs project using the command:
+- **Responsive**: love-simple-ui is built with responsiveness in mind, ensuring that your web application looks great on any device or screen size.
 
-```plaintext
-npx create-aria-doc <project-directory>
+- **Easy to Use**: The library is designed to be beginner-friendly, allowing developers to quickly and effortlessly integrate it into their projects. The intuitive API and well-documented code make it easy to get started.
+
+- **Comprehensive Documentation**: love-simple-ui comes with comprehensive documentation that guides you through the installation process and provides detailed examples and usage instructions for each component.
+
+#
+
+## 📦️ Installation
+
+To install love-simple-ui via npm, follow these steps:
+
+- Open a terminal window and navigate to your project directory
+- Run the following command:
+  ```bash
+  npm install love-simple-ui # Wait for the installation to complete.
+  ```
+- If you want to add it as a development dependency
+  ```bash
+  npm install love-simple-ui --save-dev
+  ```
+- Alternatively, you can add love-simple-ui as a dependency to your project by including it in your package.json file.
+  ```bash
+  npm install love-simple-ui --save
+  ```
+
+#
+
+## 🛠️ Usage
+
+To use love-simple-ui in your project, you must first import the library into your project. To do this, add the following line to the top of your JavaScript file:
+
+```jsx
+import { component } from "love-simple-ui";
 ```
 
-### Expected Output
+Once you've imported the library, you can use any of the components it contains. For example, to use the PrimaryButton component, simply add the following line to your code:
 
-When you run the CLI, you can expect an output similar to this:
+```jsx
+import { Buttton1 } from "love-simple-ui";
 
-```
-Creating a new Ariadocs project in /path/to/your/project from the master branch...
-Cloning Master (Full Documentation)...
-Ariadocs project successfully created in /path/to/your/project!
-
-Next steps:
-1. Navigate to your project directory:
-   cd <project-directory>
-2. Install dependencies:
-   // To support React 19, package maintainers will need to test and update their packages to include React 19 as a peer dependency. This is already in progress.
-   npm install --force 
-3. Start the development server:
-   npm run dev
+function App() {
+  return (
+    <div className="App">
+      <Button1>Hello World!</Button1>
+    </div>
+  );
+}
 ```
 
-## Getting Started
+#
 
-First, run the development server:
+## 😍 Contributing
 
-```plaintext
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Contributions are welcomed! If you'd like to contribute to love-simple-ui, please follow these steps:
+
+- Fork this repository
+<p>
+  <img src="https://github.com/thekavikumar/love-simple-ui/assets/77252075/46ccc774-a2da-451c-8c7a-70d7ec5f630a" />
+</p>
+
+- First clone the forked repository to your local System:
+
+```bash
+git clone <repository Url or ssh>
 ```
 
+- Create a new branch:
 
-## Deploy on Vercel
+```bash
+git checkout -b <branch_name>
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Make your changes and commit them:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```bash
+git commit -m '<commit_message>'
+```
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/nisabmohd/Aria-Docs)
+- Push to the original branch:
 
-## Key Features
+```bash
+git push origin love-simple-ui/<location>
+```
 
-| **Feature**                   | **Description**                                          |
-|-------------------------------|----------------------------------------------------------|
-| MDX Support                   | Write interactive documentation with MDX.                |
-| Nested Pages                  | Organize content in a nested, hierarchical structure.    |
-| Blog Section                  | Include a dedicated blog section.                        |
-| Table of Contents             | Auto-generated TOC for easy navigation.                  |
-| Pagination                    | Split content across multiple pages.                     |
-| Syntax Highlighting           | Highlight code for better readability.                   |
-| Code Line Highlighting & Titles | Highlight specific lines with descriptive titles.      |
-| Interactive Code Blocks       | Language-specific and interactive code display.          |
-| Custom Components             | Embed custom, reusable components in your docs.          |
-| Light & Dark Mode             | Toggle between light and dark themes.                    |
-| Search Functionality          | Quickly find content with a built-in search.             |
-| Code Switcher                 | Switch between code languages or variations.             |
-| Code Copy                     | Copy code blocks with a single click.                    |
-| TOC Observer Highlight        | Highlight active sections in the TOC as you scroll.      |
-| Static Site Generation        | Generate a static, high-performance site.                |
-| SEO-Optimized                 | Structured for optimal search engine indexing.           |
+- Create the pull request from **Pull request** tab
 
+Alternatively, you can create a new issue if you find a bug or have a feature request.
 
-## Additional Themes
+#
 
-<img src="./public/halloween.png" alt="halloween" />
-<img src="./public/nebula.png" alt="halloween" />
-<img src="./public/ocean.png" alt="halloween" />
+## License
+
+Licensed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+#
+
+## Contributors
+
+<p align="center">
+<a href="https://github.com/thekavikumar/love-simple-ui/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=thekavikumar/love-simple-ui" />
+</a></p>
+
+<p align="right">(<a href="#top">Back to top</a>)</p>
