@@ -1,14 +1,17 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "module": "ESNext",
-    "moduleResolution": "node",
-    "declaration": true,
-    "declarationDir": "./dist",
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "jsx": "react" // Add this line to support JSX syntax
+    "target": "ESNext", // Use ESNext to enable modern JS features
+    "module": "ESNext", // Use ESNext to generate ES Modules (needed for ESM)
+    "moduleResolution": "node", // Resolve modules the same way Node.js does
+    "declaration": true, // Enable declaration file generation
+    "declarationDir": "./dist", // Output declaration files to the dist directory
+    "esModuleInterop": true, // Ensure compatibility between CommonJS and ESM
+    "skipLibCheck": true, // Skip library checks (useful for large projects)
+    "strict": true, // Enable strict type checking
+    "jsx": "react", // Enable JSX support for React
+    "allowSyntheticDefaultImports": true, // Allow default imports for CommonJS modules
+    "resolveJsonModule": true // Allow importing JSON modules
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*"], // Include all files in the src folder
+  "exclude": ["node_modules"] // Exclude node_modules (default behavior)
 }

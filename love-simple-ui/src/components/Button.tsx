@@ -1,7 +1,7 @@
 import React from 'react';
-import { cn } from '../../utils/utils';
+import { cn } from '../utils/utils';
 
-type ButtonProps = {
+export type ButtonProps = {
   variant?: 'primary' | 'secondary';
   className?: string; // Allow custom class names
   children: React.ReactNode;

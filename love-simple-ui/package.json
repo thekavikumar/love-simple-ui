@@ -1,5 +1,12 @@
 {
   "name": "love-simple-ui",
+  "version": "4.0.5",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "private": false,
   "author": {
     "name": "Kavikumar M",
@@ -13,25 +20,20 @@
     "type": "git",
     "url": "https://github.com/thekavikumar/love-simple-ui.git"
   },
-  "version": "4.0.0",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist"
-  ],
   "scripts": {
     "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "clsx": "^2.1.1",
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "tailwindcss": "^3.4.17",
+    "@chialab/esbuild-plugin-postcss": "^0.18.0",
     "@chromatic-com/storybook": "^3.2.3",
     "@storybook/addon-essentials": "^8.4.7",
     "@storybook/addon-interactions": "^8.4.7",
@@ -53,7 +55,11 @@
     "typescript": "~5.6.2",
     "vite": "^6.0.6"
   },
-  "peerDependencies": {
-    "tailwindcss": "^3.4.17"
+  "exports": {
+    ".": {
+      "import": "./dist/index.esm.js",
+      "require": "./dist/index.cjs.js"
+    },
+    "./package.json": "./package.json"
   }
 }

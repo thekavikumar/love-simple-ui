@@ -2,9 +2,10 @@ import React from 'react';
 
 type ButtonProps = {
     variant?: 'primary' | 'secondary';
-    onClick?: () => void;
+    className?: string;
     children: React.ReactNode;
+    onClick?: () => void;
 };
 declare const Button: React.FC<ButtonProps>;
 
-export { Button };
+export { Button, ButtonProps };
