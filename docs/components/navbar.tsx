@@ -1,33 +1,33 @@
-import { ModeToggle } from "@/components/theme-toggle";
-import { GithubIcon, TwitterIcon, Heart } from "lucide-react";
-import Link from "next/link";
-import { buttonVariants } from "./ui/button";
-import Search from "./search";
-import Anchor from "./anchor";
-import { SheetLeftbar } from "./leftbar";
-import { page_routes } from "@/lib/routes-config";
-import { SheetClose } from "@/components/ui/sheet";
+import { ModeToggle } from '@/components/theme-toggle';
+import { GithubIcon, TwitterIcon, Heart } from 'lucide-react';
+import Link from 'next/link';
+import { buttonVariants } from './ui/button';
+import Search from './search';
+import Anchor from './anchor';
+import { SheetLeftbar } from './leftbar';
+import { page_routes } from '@/lib/routes-config';
+import { SheetClose } from '@/components/ui/sheet';
 
 export const NAVLINKS = [
   {
-    title: "Documentation",
+    title: 'Documentation',
     href: `/docs${page_routes[0].href}`,
   },
   {
-    title: "Blog",
-    href: "/blog",
+    title: 'Blog',
+    href: '/blog',
   },
   {
-    title: "Examples",
-    href: "#",
+    title: 'Examples',
+    href: '#',
   },
   {
-    title: "Guides",
-    href: "#",
+    title: 'Guides',
+    href: '#',
   },
   {
-    title: "Community",
-    href: "https://github.com/thekavikumar/love-simple-ui/discussions",
+    title: 'Community',
+    href: 'https://github.com/thekavikumar/love-simple-ui/discussions',
   },
 ];
 
@@ -52,16 +52,18 @@ export function Navbar() {
             <Search />
             <div className="flex ml-2.5 sm:ml-0">
               <Link
-                href="https://github.com/nisabmohd/NexDocs"
-                className={buttonVariants({ variant: "ghost", size: "icon" })}
+                target="_blank"
+                href="https://github.com/thekavikumar/love-simple-ui"
+                className={buttonVariants({ variant: 'ghost', size: 'icon' })}
               >
                 <GithubIcon className="h-[1.1rem] w-[1.1rem]" />
               </Link>
               <Link
-                href="#"
+                target="_blank"
+                href="https://twitter.com/thekavikumar"
                 className={buttonVariants({
-                  variant: "ghost",
-                  size: "icon",
+                  variant: 'ghost',
+                  size: 'icon',
                 })}
               >
                 <TwitterIcon className="h-[1.1rem] w-[1.1rem]" />
