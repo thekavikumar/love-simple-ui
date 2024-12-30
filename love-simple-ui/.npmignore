@@ -1,0 +1,11 @@
+# .npmignore
+.storybook
+tailwind.config.js
+postcss.config.js
+stories
+src/**/*.test.tsx
+src/**/*.stories.tsx
+*.md
+*.log
+.gitignore
+.vscode/

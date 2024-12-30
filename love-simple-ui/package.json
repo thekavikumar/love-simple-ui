@@ -21,18 +21,39 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist"
+    "build": "tsup src/index.ts --dts --format cjs,esm --out-dir dist",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.3",
+    "@storybook/addon-essentials": "^8.4.7",
+    "@storybook/addon-interactions": "^8.4.7",
+    "@storybook/addon-onboarding": "^8.4.7",
+    "@storybook/blocks": "^8.4.7",
+    "@storybook/react": "^8.4.7",
+    "@storybook/react-vite": "^8.4.7",
+    "@storybook/test": "^8.4.7",
     "@types/css-modules": "^1.0.5",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
     "esbuild": "^0.24.2",
+    "esbuild-plugin-postcss": "^0.2.1",
+    "postcss": "^8.4.49",
+    "postcss-import": "^16.1.0",
+    "storybook": "^8.4.7",
     "tsup": "^6.7.0",
-    "typescript": "~5.6.2"
+    "typescript": "~5.6.2",
+    "vite": "^6.0.6"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }
