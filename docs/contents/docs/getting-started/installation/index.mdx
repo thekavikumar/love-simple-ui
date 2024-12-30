@@ -7,25 +7,45 @@ Setting up **Love-Simple-UI** is quick and easy, with options to install via npm
 
 ---
 
-## Install via npm or Yarn  
+## Install via npm or Yarn
 
-You can easily install **Love-Simple-UI** into your project using npm or Yarn.  
+You can easily install **Love-Simple-UI** into your project using npm or Yarn.
 
 <Stepper>
   <StepperItem title="Step 1: Install Love-Simple-UI">
-    Add Love-Simple-UI to your project by running the following command:  
+    Add Love-Simple-UI to your project by running the following command:
 
     ```plaintext
     npm install love-simple-ui
     ```
-    **Or, if you prefer Yarn:**  
+    **Or, if you prefer Yarn:**
 
     ```plaintext
     yarn add love-simple-ui
     ```
+
   </StepperItem>
 
-  <StepperItem title="Step 2: Import the Components">
+  <StepperItem title="Step 2: Configure Tailwind CSS">
+    To ensure Tailwind CSS styles from **Love-Simple-UI** are applied correctly, update your `tailwind.config.js` file to include the `node_modules/love-simple-ui` directory in the `content` array:
+
+    ```javascript {4}
+    // File: tailwind.config.js
+    module.exports = {
+      content: [
+        './src/**/*.{js,jsx,ts,tsx}',
+        './node_modules/love-simple-ui/dist/**/*.{js,jsx,ts,tsx}',
+      ],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    };
+    ```
+
+  </StepperItem>
+
+  <StepperItem title="Step 3: Import the Components">
     After installation, you can import and use the components in your React application. Here's an example:
 
     ```jsx
@@ -33,10 +53,11 @@ You can easily install **Love-Simple-UI** into your project using npm or Yarn.
     import { Button } from 'love-simple-ui';
 
     function App(){
-      <Button>Click Me</Button>
+      return <Button>Click Me</Button>;
     };
 
     export default App;
     ```
+
   </StepperItem>
 </Stepper>
